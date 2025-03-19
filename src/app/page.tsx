@@ -23,31 +23,33 @@ export default function Home() {
 
       <HomeLandingSection />
 
+      <EventShowcaseSection />
+
       <InnovateWithAISection />
+
+      <SdgAISection />
 
       <TimeTickingSection />
 
-      <EventShowcaseSection/>
 
-      <KitaHackInfoSection/>
+      <KitaHackInfoSection />
 
-      <SdgAISection/>
 
-      <SdgInfoSection/>
+      <SdgInfoSection />
 
-      <AIinfoSection/>
+      <AIinfoSection />
 
-      {/* <HowToJoinSection/> */} 
+      {/* <HowToJoinSection/> */}
 
-      <TeamFormationSection/>
+      <TeamFormationSection />
 
-      <JudgingCriteriaSection/>
+      <JudgingCriteriaSection />
 
       {/* <SubmissionCriteriaSection/> */}
 
       {/* <MentorsSection/> */}
 
-      <FAQsSection/>
+      <FAQsSection />
 
     </main>
   );
