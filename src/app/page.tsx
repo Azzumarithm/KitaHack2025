@@ -9,7 +9,10 @@ import JudgingCriteriaSection from "./_components/HomePage/judging-criteria-sect
 // import MentorsSection from "./_components/HomePage/mentor-section/MentorSection";
 import FAQsSection from "./_components/HomePage/faqs-section/FAQsSection";
 import AIinfoSection from "./_components/HomePage/ai-info-section/AIinfoSection";
+
 import InnovateWithAISection from "./_components/HomePage/innovate-with-ai/InnovateWithAI";
+
+import SdgAISection from "./_components/HomePage/sdg-ai-section/SdgAISection";
 
 
 export default function Home() {
@@ -23,6 +26,8 @@ export default function Home() {
       <TimeTickingSection />
 
       <KitaHackInfoSection/>
+
+      <SdgAISection/>
 
       <SdgInfoSection/>
 
