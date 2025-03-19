@@ -118,7 +118,7 @@ const HomeLandingSection = () => {
                             </p>
                             {/* Buttons */}
                             <div className="flex space-x-4 justify-center lg:justify-start">
-                                <a id="knowMoreButton" href="">
+                                <a id="knowMoreButton" href="/#kitahack-info">
                                     <span className="inline-block px-7 py-3 text-[#1D68E5] border border-[#1D68E5] rounded-full">
                                         Know More
                                         <Icon icon="mdi:wand" className="inline-block h-6 w-6 ml-2" />
