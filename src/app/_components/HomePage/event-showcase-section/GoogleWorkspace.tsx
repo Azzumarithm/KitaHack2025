@@ -1,21 +1,40 @@
 "use client"
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+
 
 const EventShowcaseSection: React.FC = () => {
+
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const image =
+    (theme || resolvedTheme) !== "dark"
+      ? "/images/Left-Image.png"
+      : "/images/Left-Image-dark.png";
+
+
   return (
     <section className="flex flex-col-reverse md:flex-row items-center gap-6 px-6 md:px-12 py-12 bg-white dark:bg-[#121212]">
       {/* Left Section: Event Image */}
       <div className="relative w-full md:w-[55%] flex justify-center">
         {/* Event Poster */}
         <div className="relative">
-          <Image 
-            src="/images/Left-Image.png" 
-            alt="Workshop Poster with Speaker" 
-            width={900} 
-            height={630} 
+          <Image
+            src={image}
+            alt="Workshop Poster with Speaker"
+            width={900}
+            height={630}
           />
         </div>
       </div>
@@ -39,7 +58,7 @@ const EventShowcaseSection: React.FC = () => {
         {/* Event Schedule and Agenda */}
         <p className="text-gray-700 dark:text-gray-400 text-base md:text-lg">
           <strong>Date and Time:</strong> 8th March 2025, 10:00am – 12:00pm <br />
-          <strong>Agenda:</strong> Introduction to Neural Networks, Introduction to TensorFlow, 
+          <strong>Agenda:</strong> Introduction to Neural Networks, Introduction to TensorFlow,
           Computer Vision - Image Recognition, and Image Classification using CNN.
         </p>
 
