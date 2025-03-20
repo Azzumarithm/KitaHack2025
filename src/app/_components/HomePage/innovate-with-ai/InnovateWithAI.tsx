@@ -6,9 +6,9 @@ const InnovateWithAISection = () => {
     const bentoGrids = [
         {
             id: 1,
-            span: "md:col-span-1 md:aspect-square",
+            span: "md:col-span-1",
             background: "bg-[url('/images/kitahack-bg.png')] bg-cover bg-center bg-no-repeat",
-            style: { backgroundSize: "150%" },
+            style: { backgroundSize: "180%" },
             content: <img src="images/KitaHack2025-logo.svg" alt="KitaHack Logo"/>,
         },
         {
@@ -107,7 +107,7 @@ const InnovateWithAISection = () => {
                                 grid.id !== 3 ? (
                                     <>
                                         <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                        <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[68%]">
+                                        <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[85%]">
                                             <i>{grid.text}</i>
                                         </p>
                                     </>
@@ -115,7 +115,7 @@ const InnovateWithAISection = () => {
                                     <div className="text-center flex flex-col gap-2 items-center">
                                         <>
                                             <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[68%]">
+                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[70%]">
                                                 <i>{grid.text}</i>
                                             </p>
                                         </>
