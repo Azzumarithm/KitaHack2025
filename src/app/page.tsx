@@ -15,6 +15,7 @@ import EventShowcaseSection from "./_components/HomePage/event-showcase-section/
 import InnovateWithAISection from "./_components/HomePage/innovate-with-ai/InnovateWithAI";
 
 import SdgAISection from "./_components/HomePage/sdg-ai-section/SdgAISection";
+import JudgingCriteriaNew from "./_components/HomePage/judging-criteria-new/judging-criteria";
 
 
 export default function Home() {
@@ -42,6 +43,8 @@ export default function Home() {
       {/* <HowToJoinSection/> */}
 
       <TeamFormationSection />
+
+      <JudgingCriteriaNew />
 
       <JudgingCriteriaSection />
 
