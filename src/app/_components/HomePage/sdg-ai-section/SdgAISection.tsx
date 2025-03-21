@@ -2,7 +2,9 @@
 
 import { GlobeAltIcon } from "@heroicons/react/24/solid";
 
+// import { useTheme } from "next-themes";
 import Image from "next/image";
+// import { useEffect, useState } from "react";
 
 import { motion } from "framer-motion"
 
