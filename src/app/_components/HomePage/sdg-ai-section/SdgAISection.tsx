@@ -151,6 +151,7 @@ const SdgAISection = () => {
                                 <div className="relative grid grid-cols-1 gap-5 container">
                                     {aiTools.map((tool, index) => (
                                         <motion.div
+                                            key={index}
                                             initial={{ opacity: 0, y: 50 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5 }}
@@ -158,7 +159,6 @@ const SdgAISection = () => {
                                             viewport={{ once: false }}
                                         >
                                             <div
-                                                key={index}
                                                 className="group rounded-2xl border-[3px] border-gray-200 shadow-md shadow-gray-300 dark:shadow-gray-600 dark:border-gray-600 hover:border-blue-600 hover:shadow-blue-300 hover:shadow-md bg-white dark:bg-[#1d1d1d] dark:hover:border-blue-600 dark:hover:shadow-blue-500 cursor-pointer transition-all duration-300 flex items-center px-5 py-2"
                                             >
                                                 <div className="flex items-center space-x-5 group-hover:flex-col group-hover:items-start group-hover:justify-center group-hover:space-x-0 ">
