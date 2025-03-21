@@ -17,10 +17,10 @@ const SdgAISection = () => {
 
     if (!mounted) return null;
 
-    const pattern =
-        (theme || resolvedTheme) === "dark"
-            ? "/images/homepage/sdgAI/Pattern-BG-dark.svg"
-            : "/images/homepage/sdgAI/Pattern-BG.svg";
+    // const pattern =
+    //     (theme || resolvedTheme) === "dark"
+    //         ? "/images/homepage/sdgAI/Pattern-BG-dark.svg"
+    //         : "/images/homepage/sdgAI/Pattern-BG.svg";
 
     const aiTools = [
         {
