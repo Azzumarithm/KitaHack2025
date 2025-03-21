@@ -96,7 +96,7 @@ const HomeLandingSection = () => {
         <section className="flex items-center lg:mt-20 z-10">
             <div className="container mx-auto z-10">
 
-                <div className="text-center text-gray-800 px-6 md:px-12 xl:px-40 lg:text-left">
+                <div className="text-center text-gray-800 px-12 md:px-12 xl:px-40 lg:text-left">
 
                     {/* Grid Layout */}
                     <div className="grid items-center gap-12 lg:grid-cols-2" id="sponsors">
