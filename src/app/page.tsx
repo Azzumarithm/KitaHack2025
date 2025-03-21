@@ -30,6 +30,8 @@ export default function Home() {
 
       <SdgAISection />
 
+      <TeamFormationSection />
+      
       <TimeTickingSection />
 
 
@@ -42,7 +44,6 @@ export default function Home() {
 
       {/* <HowToJoinSection/> */}
 
-      <TeamFormationSection />
 
       <JudgingCriteriaNew />
 
