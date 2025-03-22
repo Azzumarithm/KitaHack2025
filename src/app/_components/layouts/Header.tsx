@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+
+import { useEffect, useState } from "react";
 // import { Button } from "@/components/ui/button"
 
 // import {
@@ -169,10 +171,36 @@ const moreContents: { title: string; href: string; description: string; src: str
 
 const Header = ({ }) => {
 
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
+    const { toggleSidebar, open } = useSidebar(); // Using `open` from context
 
-    const {
-        toggleSidebar,
-    } = useSidebar()
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && show && !isAnimating) {
+                if (open) {
+                    setIsAnimating(true);
+                    toggleSidebar(); // Close sidebar first
+                    setTimeout(() => {
+                        setShow(false);
+                        setIsAnimating(false);
+                    }, 400); // Slightly longer delay for a smoother effect
+                } else {
+                    setShow(false);
+                }
+            } else if (currentScrollY < lastScrollY && !show) {
+                setShow(true);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [show, lastScrollY, open, toggleSidebar, isAnimating]);
 
     const { setTheme } = useTheme()
 
@@ -353,7 +381,9 @@ const Header = ({ }) => {
                 />
             </div> */}
 
-            <header className="h-16 xl:h-24 text-[15px] fixed inset-0 bg-gradient-to-r from-[#FE79B9]/30 via-[#AD00FF]/30 to-[#2489FF]/30 backdrop-blur-3xl dark:bg-black/40 z-20">
+            <header
+                className={`h-16 xl:h-24 text-[15px] fixed top-0 left-0 right-0 bg-gradient-to-r from-[#FE79B9]/30 via-[#AD00FF]/30 to-[#2489FF]/30 backdrop-blur-3xl dark:bg-black/40 z-20 transition-transform duration-300 ease-in-out ${show ? "translate-y-0" : "-translate-y-full"}`}
+            >
 
                 {/* <nav className="mx-6 lg:ml-24 lg:mr-12 flex justify-center items-center h-full min-w-screen"> */}
                 <nav className="mx-6 lg:ml-24 lg:mr-24 flex xl:grid xl:grid-cols-[1fr_auto_1fr] items-center h-full min-w-screen">
@@ -372,12 +402,28 @@ const Header = ({ }) => {
                             <MenubarMenu>
                                 <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
                                     <Link href={"/#sponsors"}>
-                                        Sponsors
+                                        About
                                     </Link>
                                 </MenubarTrigger>
                             </MenubarMenu>
 
                             <MenubarMenu>
+                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                    <Link href={"/#sponsors"}>
+                                        AI Tools
+                                    </Link>
+                                </MenubarTrigger>
+                            </MenubarMenu>
+
+                            <MenubarMenu>
+                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                    <Link href={"/#sponsors"}>
+                                        Criteria
+                                    </Link>
+                                </MenubarTrigger>
+                            </MenubarMenu>
+
+                            {/* <MenubarMenu>
                                 <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Details</MenubarTrigger>
                                 <MenubarContent align="start" className={"max-h-64 overflow-y-auto hidden lg:block backdrop-blur-md"}>
                                     {moreContents.map((moreContent) => (
@@ -392,7 +438,7 @@ const Header = ({ }) => {
                                         </MoreItem>
                                     ))}
                                 </MenubarContent>
-                            </MenubarMenu>
+                            </MenubarMenu> */}
 
                             {/* <MenubarMenu>
                                 <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>About</MenubarTrigger>
@@ -458,8 +504,8 @@ const Header = ({ }) => {
                                     <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Chapters</MenubarTrigger>
                                 </MenubarMenu>
                                 <MenubarMenu>
-                                    <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Events</MenubarTrigger>
-                                    <MenubarContent className={"max-w-24 mt-2"} align="start">
+                                    <MenubarTrigger className={`bg-transparent border-none data-[state=open]:bg-white/10  text-white data-[state=open]:text-white `}>Events</MenubarTrigger>
+                                    <MenubarContent className={`max-w-24 mt-2 ${show ? "block" : "hidden"}`} align="start">
                                         {eventsContents.map((event) => (
                                             <EventItem key={event.title} title={event.title} href={event.href} subEvents={event.subEvents} />
                                         ))}
@@ -488,7 +534,7 @@ const Header = ({ }) => {
                         </div>
 
                         <Link className={"hidden xl:block"} href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/viewform?usp=dialog">
-                            <button className={"bg-white text-black font-black w-[10rem] px-7 py-3 rounded-full"}>
+                            <button className="bg-white/30 text-white font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/50 shadow-lg hover:bg-white/40 transition-all duration-300">
                                 Register Now
                             </button>
                         </Link>
@@ -499,7 +545,7 @@ const Header = ({ }) => {
                     <SidebarTrigger className={"xl:hidden text-white bg-transparent border-none active:bg-transparent focus:bg-transparent focus-visible:bg-transparent data-[state=open]:bg-transparent aria-selected:bg-transparent group-active:bg-transparent active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white flex items-center space-x-1 rounded-md border shadow-md ml-3 h-[36px] w-[36px]"} />
 
                     <div className={"xl:hidden"}>
-                        <Sidebar side={"right"} collapsible={"offcanvas"} variant={"sidebar"} >
+                        <Sidebar side={"right"} collapsible={"offcanvas"} variant={"sidebar"} onClick={toggleSidebar}>
                             <SidebarContent>
                                 <SidebarGroup>
                                     <SidebarGroupContent>
