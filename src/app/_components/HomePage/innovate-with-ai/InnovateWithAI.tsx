@@ -92,11 +92,11 @@ const InnovateWithAISection = () => {
                         >
                             {grid.id === 3 && (
                                 <>
-                                    <div className="absolute top-[15%] left-0 transform -translate-x-1/2 hidden md:block">
+                                    <div className="absolute top-[15%] left-0 transform -translate-x-1/2 hidden lg:block">
                                         <div className="w-16">{grid.bubblesvai}</div>
                                         <div className="absolute top-6 left-10 w-48">{grid.bubblesgas}</div>
                                     </div>
-                                    <div className="absolute top-[15%] right-[-7%] transform -translate-x-1/2 hidden md:block">
+                                    <div className="absolute top-[15%] right-[-7%] transform -translate-x-1/2 hidden lg:block">
                                         <div className="w-16">{grid.bubblesvai}</div>
                                         <div className="absolute top-6 right-10 w-48">{grid.bubblesgmi}</div>
                                     </div>
@@ -107,15 +107,15 @@ const InnovateWithAISection = () => {
                                 grid.id !== 3 ? (
                                     <>
                                         <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                        <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[85%]">
+                                        <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-full md:w-[85%]">
                                             <i>{grid.text}</i>
                                         </p>
                                     </>
                                 ) : (
-                                    <div className="text-center flex flex-col gap-2 items-center">
+                                    <div className="flex flex-col gap-2 items-start text-left md:items-center md:text-center">
                                         <>
                                             <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-[70%]">
+                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-full lg:w-[70%]">
                                                 <i>{grid.text}</i>
                                             </p>
                                         </>
