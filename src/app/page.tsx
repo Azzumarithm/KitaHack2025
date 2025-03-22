@@ -16,6 +16,7 @@ import InnovateWithAISection from "./_components/HomePage/innovate-with-ai/Innov
 
 import SdgAISection from "./_components/HomePage/sdg-ai-section/SdgAISection";
 import JudgingCriteriaNew from "./_components/HomePage/judging-criteria-new/judging-criteria";
+import BannerHashtagSection from "./_components/HomePage/banner-hashtag-section/BannerHashtagSection";
 import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionNew";
 
 
@@ -29,10 +30,14 @@ export default function Home() {
 
       <InnovateWithAISection />
 
+      <BannerHashtagSection/>
+
       <SdgAISection />
 
       <TeamFormationSection />
       
+      <JudgingCriteriaNew />
+
       <TimeTickingSection />
 
 
@@ -46,7 +51,6 @@ export default function Home() {
       {/* <HowToJoinSection/> */}
 
 
-      <JudgingCriteriaNew />
 
       <JudgingCriteriaSection />
 
