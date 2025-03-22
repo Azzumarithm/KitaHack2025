@@ -71,16 +71,16 @@ const JudgingCriteriaSection = () => {
 
             <section className="mt-4 md:mt-12 flex flex-col gap-6 md:gap-14">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="flex flex-col w-full gap-4 md:gap-12">
+                    <div className="flex flex-col w-full gap-4 md:gap-8 lg:gap-12">
                         <div className="relative flex justify-center">
                             {/* Main card */}
-                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-2/3 py-2 md:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
+                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-2/3 py-2 lg:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
                                 <img src="images/layers.png" alt="Layers Icon" className="w-6" />
                                 <h3 className="text-[#116BFF] font-semibold text-xl md:text-2xl">IMPACT</h3>
                                 <p className="text-sm text-pink-500">(60%)</p>
                             </div>
                             {/* Background gradient effect */}
-                            <img className="absolute top-1/2 border border-[#BDBDB] rounded-xl" src="images/Mask group.svg" alt="" />
+                            <img className="absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20" src="images/Mask group.svg" alt="" />
                         </div>
                         {/* expandable 1 */}
                         {showImpact && (
@@ -97,16 +97,16 @@ const JudgingCriteriaSection = () => {
                             {showImpact ? "See Less" : "See More"}
                         </button>
                     </div>
-                    <div className="flex flex-col w-full gap-4 md:gap-12">
+                    <div className="flex flex-col w-full gap-4 md:gap-8 lg:gap-12">
                         <div className="relative flex justify-center">
                             {/* Main card */}
-                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-2/3 py-2 md:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
+                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-2/3 py-2 lg:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
                                 <img src="images/layers.png" alt="Layers Icon" className="w-6" />
                                 <h3 className="text-[#116BFF] font-semibold text-2xl">TECHNICAL</h3>
                                 <p className="text-sm text-pink-500">(20%)</p>
                             </div>
                             {/* Background gradient effect */}
-                            <img className="absolute top-1/2 border border-[#BDBDB] rounded-xl" src="images/Mask group.svg" alt="" />
+                            <img className="absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20" src="images/Mask group.svg" alt="" />
                         </div>
                         {/* expandable 2 */}
                         {showTech && (
@@ -124,16 +124,16 @@ const JudgingCriteriaSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex flex-col w-full gap-8 md:gap-16">
+                <div className="flex flex-col w-full gap-10 lg:gap-14">
                     <div className="relative flex w-full justify-center">
                         {/* Main card */}
-                        <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:30%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-5/6 py-2 md:py-10 flex flex-col gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
+                        <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:30%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 md:w-5/6 py-2 lg:py-10 flex flex-col gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:hover:border-[#4285F4] transition-colors duration-200">
                             <img src="images/layers.png" alt="Layers Icon" className="w-6" />
                             <h3 className="text-[#116BFF] font-semibold text-lg md:text-2xl">ENSURING FAIR AND IMPARTIAL JUDGING</h3>
                         </div>
                         {/* Background gradient effect */}
-                        <img className="hidden md:block absolute top-1/2 border border-[#BDBDB] rounded-xl" src="images/Mask group Wide.svg" alt="" />
-                        <img className="md:hidden absolute top-1/2 border border-[#BDBDB] rounded-xl" src="images/Mask group.svg" alt="" />
+                        <img className="hidden md:block absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl" src="images/Mask group Wide.svg" alt="" />
+                        <img className="md:hidden absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 dark: rounded-xl max-h-20" src="images/Mask group.svg" alt="" />
                     </div>
                     {/* expandable 3 */}
                     {showJudging && (
