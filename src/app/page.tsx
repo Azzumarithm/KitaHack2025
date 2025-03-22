@@ -32,6 +32,8 @@ export default function Home() {
 
       <TeamFormationSection />
       
+      <JudgingCriteriaNew />
+
       <TimeTickingSection />
 
 
@@ -45,7 +47,6 @@ export default function Home() {
       {/* <HowToJoinSection/> */}
 
 
-      <JudgingCriteriaNew />
 
       <JudgingCriteriaSection />
 
