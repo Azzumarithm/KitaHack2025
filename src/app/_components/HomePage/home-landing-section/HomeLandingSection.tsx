@@ -5,6 +5,7 @@ import "./style.css";
 import { GlobeAltIcon } from "@heroicons/react/24/solid";
 import { Icon } from "@iconify/react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const HomeLandingSection = () => {
 
@@ -92,6 +93,27 @@ const HomeLandingSection = () => {
         }
     ];
 
+    const imageSlideShow = [
+        "/images/slideshow/Copy of IMG_1773.JPG",
+        "/images/slideshow/Copy of IMG_1786.JPG",
+        "/images/slideshow/IMG_0820.JPG",
+        "/images/slideshow/IMG_1796.JPG",
+        "/images/slideshow/IMG_1809.JPG",
+        "/images/slideshow/IMG_1819.JPG",
+        "/images/slideshow/IMG_1885.JPG",
+        "/images/slideshow/IMG_4899.HEIC",
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSlideShow.length);
+        }, 5000); // Change every 5 seconds
+
+        return () => clearInterval(interval); // Cleanup interval on unmount
+    }, []);
+
     return (
         <section className="flex items-center lg:mt-20 z-10">
             <div className="container mx-auto z-10">
@@ -119,27 +141,23 @@ const HomeLandingSection = () => {
                             {/* Buttons */}
                             <div className="flex space-x-4 justify-center lg:justify-start">
                                 <a id="knowMoreButton" href="/#kitahack-info">
-                                    <span className="inline-block px-7 py-3 text-[#1D68E5] border border-[#1D68E5] rounded-full">
+                                    <span className="text-center inline-block w-44 px-7 py-3 text-[#1D68E5] border border-[#1D68E5] rounded-full">
                                         Know More
                                         <Icon icon="mdi:wand" className="inline-block h-6 w-6 ml-2" />
                                     </span>
                                 </a>
                                 <a id="registerButton" href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                                    <span className="inline-block px-7 py-3 bg-[#1D68E5] text-white rounded-full">
+                                    <span className="text-center inline-block w-40 px-7 py-3 bg-[#1D68E5] text-white rounded-full">
                                         Register Now
                                     </span>
                                 </a>
                             </div>
                         </div>
                         {/* Pictures */}
-                        <div className="mb-12 lg:mb-0">
-                            <Image
-                                src="/images/gsc_home_hero_logo.png"
-                                width={400} // Adjust width based on actual image size
-                                height={400} // Adjust height based on actual image size
-                                className="w-full rounded-xl shadow-2xl shadow-xl"
-                                alt="GSC Home Hero Logo"
-                                priority // Optimizes loading for LCP
+                        <div className="mb-12 lg:mb-0 relative w-full lg:max-w-[456px] aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                            <img
+                                src={imageSlideShow[currentIndex]}
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
