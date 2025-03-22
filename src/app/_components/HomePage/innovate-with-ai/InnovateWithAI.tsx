@@ -1,4 +1,6 @@
+"use client"
 import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
+import { motion } from "framer-motion";
 
 const InnovateWithAISection = () => {
 
@@ -9,7 +11,7 @@ const InnovateWithAISection = () => {
             span: "md:col-span-1",
             background: "bg-[url('/images/kitahack-bg.png')] bg-cover bg-center bg-no-repeat",
             style: { backgroundSize: "180%" },
-            content: <img src="images/KitaHack2025-logo.svg" alt="KitaHack Logo"/>,
+            content: <img src="images/KitaHack2025-logo.svg" alt="KitaHack Logo" />,
         },
         {
             id: 2,
@@ -48,7 +50,13 @@ const InnovateWithAISection = () => {
     ]
 
     return (
-        <section id="annovate-with-ai" className="container px-6 mx-auto">
+        <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false }}
+            id="annovate-with-ai"
+            className="container px-6 mx-auto">
             <div className="px-6 text-gray-800 md:mx-12 lg:text-left xl:mx-52"></div>
             <div className="flex flex-col justify-center items-center text-center gap-4">
                 {/* Badge Componenet */}
@@ -71,23 +79,32 @@ const InnovateWithAISection = () => {
                 {/* First two items (Grid 3-cols) */}
                 <div className="grid grid-rows-2 md:grid-rows-none md:grid-cols-3 gap-6">
                     {bentoGrids.slice(0, 2).map((grid) => (
-                        <div key={grid.id} style={grid.style} className={`dark:bg-[#1D1D1D] outline outline-2 dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 bg-white shadow-lg rounded-xl flex flex-col gap-2 justify-center ${grid.span} ${grid.background}`}>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: false }}
+                            key={grid.id} style={grid.style} className={`dark:bg-[#1D1D1D] outline outline-2 dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 bg-white shadow-lg rounded-xl flex flex-col gap-2 justify-center ${grid.span} ${grid.background}`}>
                             {grid.content ? grid.content : (
                                 <>
                                     <h2 className="text-blue-600 font-bold text-sm md:text-base max-w-[400px]">{grid.title}</h2>
                                     <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 max-w-[480px]"><i>{grid.text}</i></p>
                                 </>
                             )}
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
                 {/* Remaining items (Grid 3-cols) */}
                 <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-2 gap-6">
                     {bentoGrids.slice(2).map((grid) => (
-                        <div 
-                            key={grid.id} 
-                            style={grid.style} 
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: false }}
+                            key={grid.id}
+                            style={grid.style}
                             className={`outline outline-2 outline-[#DBDBDB] dark:outline-2 dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 relative justify-center md:justify-normal dark:bg-[#1D1D1D] bg-white shadow-lg rounded-xl p-6 flex flex-col gap-2 ${grid.span} ${grid.background}`}
                         >
                             {grid.id === 3 && (
@@ -102,7 +119,7 @@ const InnovateWithAISection = () => {
                                     </div>
                                 </>
                             )}
-                    
+
                             {grid.content ? grid.content : (
                                 grid.id !== 3 ? (
                                     <>
@@ -122,11 +139,11 @@ const InnovateWithAISection = () => {
                                     </div>
                                 )
                             )}
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

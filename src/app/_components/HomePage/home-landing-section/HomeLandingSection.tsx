@@ -6,6 +6,7 @@ import { GlobeAltIcon } from "@heroicons/react/24/solid";
 import { Icon } from "@iconify/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion"
 
 const HomeLandingSection = () => {
 
@@ -108,7 +109,7 @@ const HomeLandingSection = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSlideShow.length);
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSlideShow.length);
         }, 5000); // Change every 5 seconds
 
         return () => clearInterval(interval); // Cleanup interval on unmount
@@ -116,7 +117,12 @@ const HomeLandingSection = () => {
 
     return (
         <section className="flex items-center lg:mt-20 z-10">
-            <div className="container mx-auto z-10">
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+                className="container mx-auto z-10">
 
                 <div className="text-center text-gray-800 px-12 md:px-12 xl:px-40 lg:text-left">
 
@@ -205,7 +211,7 @@ const HomeLandingSection = () => {
                         })();
                     `}} />
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };

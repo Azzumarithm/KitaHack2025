@@ -2,6 +2,7 @@
 "use client";
 
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
+import { motion } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -42,7 +43,12 @@ const FAQsSectionNew = () => {
     
   return (
     <section id="faqs-section" className="container px-6 mx-auto">
-        <div className="px-6 text-gray-800 md:px-12 lg:text-left xl:px-52">
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }} 
+        className="px-6 text-gray-800 md:px-12 lg:text-left xl:px-52">
             <div className="flex justify-center">
             <span className="bg-purple-100 inline-flex items-center rounded-full  -purple-500 px-3 py-1 text-sm text-purple-700">
                 <GlobeAltIcon className="h-4 w-4 text-purple-500" />
@@ -64,7 +70,12 @@ const FAQsSectionNew = () => {
                 {/* Left Side */}
                 <div className="w-full lg:w-3/4 space-y-4 lg:mr-3">
                     {faqs.map((faq, index) => (
-                        <div key={index} className="border border-gray-300 dark:border-gray-800 rounded-xl">
+                        <motion.div key={index} 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }} 
+                        className="border border-gray-300 dark:border-gray-800 rounded-xl">
                             <button
                             onClick={() => toggleFAQ(index)}
                             className="flex justify-between items-center w-full text-left p-4 text-lg font-semibold text-[#4285F4]"
@@ -83,7 +94,7 @@ const FAQsSectionNew = () => {
                                 </p>
                             </div>
                             )}
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
@@ -118,7 +129,7 @@ const FAQsSectionNew = () => {
 
             </div>
             
-        </div>
+        </motion.div>
     </section>
   );
 };

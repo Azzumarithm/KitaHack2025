@@ -1,5 +1,5 @@
 import HomeLandingSection from "./_components/HomePage/home-landing-section/HomeLandingSection";
-import TimeTickingSection from "./_components/HomePage/time-ticking-section/TimeTickingSection";
+// import TimeTickingSection from "./_components/HomePage/time-ticking-section/TimeTickingSection";
 // import KitaHackInfoSection from "./_components/HomePage/kitaHack-info-section/KitaHackInfoSection";
 // import SdgInfoSection from "./_components/HomePage/sdg-info-section/SdgInfoSection";
 // import HowToJoinSection from "./_components/HomePage/howtojoin-section/HowToJoinSection";
@@ -38,7 +38,7 @@ export default function Home() {
       
       <JudgingCriteriaNew />
 
-      <TimeTickingSection />
+      {/* <TimeTickingSection /> */}
 
 
       {/* <KitaHackInfoSection /> */}
