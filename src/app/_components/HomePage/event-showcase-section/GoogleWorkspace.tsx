@@ -29,7 +29,7 @@ const EventShowcaseSection: React.FC = () => {
       <div className="container mx-auto z-10">
 
 
-        <div className={"flex flex-col-reverse md:flex-row items-center gap-6 px-6 md:px-12 xl:px-40 py-12"}>
+        <div className={"flex flex-col-reverse md:flex-row items-center gap-6 px-12 md:px-12 xl:px-40 py-12"}>
 
           {/* Left Section: Event Image */}
           <div className="relative w-full md:w-[55%] flex justify-center">
@@ -68,13 +68,13 @@ const EventShowcaseSection: React.FC = () => {
             <div className="flex flex-wrap gap-3 justify-center md:justify-start mt-6">
               {/* RSVP Button */}
               <Link href="https://your-rsvp-link.com" target="_blank">
-                <button className="px-6 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
+                <button className="px-12 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
                   RSVP Now
                 </button>
               </Link>
               {/* View All Workshops Button */}
               <Link href="https://your-all-workshops-link.com" target="_blank">
-                <button className="px-6 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md hover:bg-blue-100 transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-[#1d1d1d]">
+                <button className="px-12 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md hover:bg-blue-100 transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-[#1d1d1d]">
                   View All Workshops
                 </button>
               </Link>
