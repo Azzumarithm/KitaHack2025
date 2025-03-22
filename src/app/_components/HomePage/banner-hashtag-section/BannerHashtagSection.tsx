@@ -16,7 +16,7 @@ const Marquee = () => {
                         className="flex space-x-6 w-max"
                         initial={{ x: "0%" }}
                         animate={{ x: "-100%" }}
-                        transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
+                        transition={{ repeat: Infinity, duration: 70, ease: "linear" }}
                     >
                         {[...hashtags, ...hashtags].map((tag, index) => (
                             <span key={index} className="text-white font-bold text-5xl md:text-7xl italic">
@@ -28,8 +28,8 @@ const Marquee = () => {
                     <motion.div
                         className="flex space-x-6 w-max"
                         initial={{ x: "0%" }}
-                        animate={{ x: "-100%" }}
-                        transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
+                        animate={{ x: "-99%" }}
+                        transition={{ repeat: Infinity, duration: 70, ease: "linear" }}
                     >
                         {[...hashtags, ...hashtags].map((tag, index) => (
                             <span key={index} className="text-white font-bold text-5xl  md:text-7xl italic">
