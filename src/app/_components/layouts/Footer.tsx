@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="flex flex-col text-gray-600 dark:text-gray-400 w-full relative">
-            <img src="/images/gradient-footer.png" alt="Gradient Navbar" className="absolute top-12 md:top-1 2xl:hidden left-0 w-full" />
+            <img src="/images/gradient-footer.svg" alt="Gradient Navbar" className="absolute top-12 md:top-1 2xl:hidden left-0 w-full" />
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 grid-row-3 md:grid-row-1 gap-8 md:gap-12 lg:gap-8 z-10 bg-white dark:bg-[hsl(0,0%,6.9%)] mt-24 py-8 md:py-14 md:px-24">
                 <div className="col-span-1 md:col-span-2 lg:col-span-4 gap-1 flex flex-col text-center md:text-left mx-auto md:mx-0">
                     <Image
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                     <div className="mt-8 md:order-1 md:mt-0">
                         <p className="text-xs leading-5 text-center text-gray-500 dark:text-gray-400">
-                            &copy; 2025 GDG Malaysia&trade;. All Rights Reserved.
+                            &copy; 2025 GDGoC Malaysia&trade;. All Rights Reserved.
                         </p>
                     </div>
                 </div>
