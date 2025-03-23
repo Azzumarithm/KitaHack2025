@@ -49,6 +49,7 @@ const SdgAISection = () => {
     return (
         <section className="flex justify-center items-center lg:mt-20 z-10 min-w-full">
             <motion.div
+                id="sdg-ai"
                 className=""
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +67,6 @@ const SdgAISection = () => {
                     </div>
 
                     <h1
-                        id="sdg-ai"
                         className="font-semibold text-3xl md:text-5xl xl:text-6xl text-center break-words mt-5 text-black dark:text-white"
                     >
                         Advancing <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">SDGs</span> <br />
@@ -91,7 +91,7 @@ const SdgAISection = () => {
                                     height={350}
                                     className="rounded-lg h-full w-full flex justify-center items-center"
                                 />
-                                <div className="relative rounded-2xl border-[3px] border-gray-200 shadow-md shadow-gray-300 dark:shadow-gray-600 dark:border-gray-600  hover:border-blue-600 hover:shadow-blue-300 hover:shadow-md bg-white dark:bg-[#1d1d1d] dark:hover:border-blue-600 dark:hover:shadow-blue-500 cursor-pointer transition-all duration-300 bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container" style={{
+                                <div className="relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all  bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container" style={{
                                     backgroundSize: "70%",
                                     backgroundPosition: "top right",
                                     backgroundRepeat: "no-repeat"
@@ -141,7 +141,7 @@ const SdgAISection = () => {
                         <div className={"flex justify-center px-12 md:px-12 xl:px-40 "}>
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10 pt-16">
-                                <div className="relative rounded-2xl border-[3px] border-gray-200 shadow-md shadow-gray-300 dark:shadow-gray-600 dark:border-gray-600  hover:border-blue-600 hover:shadow-blue-300 hover:shadow-md bg-white dark:bg-[#1d1d1d] dark:hover:border-blue-600 dark:hover:shadow-blue-500 cursor-pointer transition-all duration-300 container">
+                                <div className="relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all  container">
                                     <div className={"z-10 p-8 md:p-16 space-y-4"}>
                                         <h1 className="relative text-lg font-semibold text-blue-600 z-10">ARTIFICIAL INTELLIGENCE</h1>
 
@@ -161,7 +161,7 @@ const SdgAISection = () => {
                                             viewport={{ once: false }}
                                         >
                                             <div
-                                                className="group rounded-2xl border-[3px] border-gray-200 shadow-md shadow-gray-300 dark:shadow-gray-600 dark:border-gray-600 hover:border-blue-600 hover:shadow-blue-300 hover:shadow-md bg-white dark:bg-[#1d1d1d] dark:hover:border-blue-600 dark:hover:shadow-blue-500 cursor-pointer transition-all duration-300 flex items-center px-5 py-3"
+                                                className="group relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all flex items-center px-5 py-3"
                                             >
                                                 <div className="flex items-center space-x-5 group-hover:flex-col group-hover:items-start group-hover:justify-center group-hover:space-x-0 ">
 

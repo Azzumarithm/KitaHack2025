@@ -109,6 +109,22 @@ const eventsContents: EventContent[] = [
                 title: "Google Workspace with Appsheet",
                 href: "/GoogleWorkspaceWithAppsheet",
             }, // use this for no workshops
+            {
+                title: "Code For Climate",
+                href: "/CodeForClimate",
+            }, // use this for no workshops
+            {
+                title: "GCP",
+                href: "/GCPEvent",
+            }, // use this for no workshops
+            {
+                title: "Firebase Workshop",
+                href: "/FirebaseWorkshop",
+            }, // use this for no workshops
+            {
+                title: "Vertex Ai And Rag",
+                href: "/VertexAiAndRag",
+            }, // use this for no workshops
             // {
             //     title: "Sunway React & Firebase Workshop Series",
             //     href: "/ReactAndFirebaseWorkshop",
@@ -409,7 +425,7 @@ const Header = ({ }) => {
 
                             <MenubarMenu>
                                 <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
-                                    <Link href={"/#sponsors"}>
+                                    <Link href={"/#sdg-ai"}>
                                         AI Tools
                                     </Link>
                                 </MenubarTrigger>
@@ -417,7 +433,7 @@ const Header = ({ }) => {
 
                             <MenubarMenu>
                                 <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
-                                    <Link href={"/#sponsors"}>
+                                    <Link href={"/#criteria"}>
                                         Criteria
                                     </Link>
                                 </MenubarTrigger>
