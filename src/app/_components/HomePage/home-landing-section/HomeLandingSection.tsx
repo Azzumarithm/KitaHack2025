@@ -136,7 +136,7 @@ const HomeLandingSection = () => {
                             </span>
                             {/* Header and Paragraph */}
                             <h1 id="hero_title" className="font-semibold mt-3 mb-6 text-5xl text-black md:text-6xl xl:text-6xl dark:text-white">
-                                Innovate, Build and Compete!
+                                <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Innovate</span>, <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Build</span> and <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Compete!</span>
                             </h1>
                             <p className="max-w-2xl mb-6 font-normal text-gray-700 dark:text-gray-400 lg:mb-8">
                                 <strong><em>GDGoC KitaHack 2025</em></strong> is
