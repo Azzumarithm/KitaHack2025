@@ -117,6 +117,10 @@ const eventsContents: EventContent[] = [
             //     title: "KDU Android Workshop",
             //     href: "#sub-event-2",
             // },
+            {
+                title: "Google AI Studio",
+                href: "/GoogleAIStudio",
+            }
         ],
     }
 ];
