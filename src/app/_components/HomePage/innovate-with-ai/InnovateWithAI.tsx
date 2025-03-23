@@ -66,7 +66,7 @@ const InnovateWithAISection = () => {
                 </span>
                 {/* Headers */}
                 <h1 id="innovateAI_title" className=" font-semibold text-3xl text-black md:text-5xl xl:text-6xl dark:text-white">
-                    Innovate with AI for a <br></br> Sustainable Future
+                    Innovate with <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">AI</span> for a <br></br> <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Sustainable Future</span>
                 </h1>
                 {/* Italic Wordings */}
                 <p>

@@ -56,7 +56,7 @@ export default function RootLayout({
           <HeaderFooter>
             
 
-              <div className="absolute inset-0 w-full h-[24rem] z-[-20]">
+            <div id="about-section" className="absolute inset-0 w-full h-[24rem] z-[-20]">
                 <Image
                   src="/images/gradient-navbar.png"
                   alt="Background"

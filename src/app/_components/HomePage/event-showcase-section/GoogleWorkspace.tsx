@@ -29,10 +29,10 @@ const EventShowcaseSection: React.FC = () => {
       <div className="container mx-auto z-10">
 
 
-        <div className={"flex flex-col-reverse md:flex-row items-center gap-6 px-12 md:px-12 xl:px-40 py-12"}>
+        <div className={"flex flex-col-reverse lg:flex-row items-center gap-6 px-12 md:px-12 xl:px-40 py-12"}>
 
           {/* Left Section: Event Image */}
-          <div className="relative w-full md:w-[55%] flex justify-center">
+          <div className="relative w-full md:w-[100%] flex justify-center">
             {/* Event Poster */}
             <div className="relative">
               <Image
@@ -45,7 +45,7 @@ const EventShowcaseSection: React.FC = () => {
           </div>
 
           {/* Right Section: Event Details */}
-          <div className="w-full md:w-[45%] space-y-4 text-center md:text-left">
+          <div className="w-full space-y-10 text-center lg:text-left">
             {/* Workshop Label */}
             <span className="bg-purple-100 inline-flex items-center rounded-full border border-purple-500 px-3 py-1 text-sm text-purple-700">
               <GlobeAltIcon className="h-4 w-4 text-purple-500" />
@@ -54,7 +54,7 @@ const EventShowcaseSection: React.FC = () => {
 
             {/* Workshop Title */}
             <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
-              Google Workspace with Appsheet
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Google Workspace with Appsheet</span>
             </h2>
 
             {/* Event Schedule and Agenda */}
@@ -65,19 +65,19 @@ const EventShowcaseSection: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-3 justify-center md:justify-start mt-6">
-              {/* RSVP Button */}
-              <Link href="https://your-rsvp-link.com" target="_blank">
-                <button className="px-12 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
-                  RSVP Now
-                </button>
-              </Link>
+            <div className="flex gap-3 justify-center lg:justify-start mt-6">
               {/* View All Workshops Button */}
-              <Link href="https://your-all-workshops-link.com" target="_blank">
-                <button className="px-12 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md hover:bg-blue-100 transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-[#1d1d1d]">
-                  View All Workshops
-                </button>
-              </Link>
+              <button className="px-12 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md bg-transparent hover:bg-blue-600 hover:text-white transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-600 dark:hover:text-white">
+                <Link href="https://your-all-workshops-link.com" target="_blank" className="md:text-md lg:text-lg">
+                  RSVP NOW
+                </Link>
+              </button>
+
+              <button className="px-12 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
+                <Link href="https://your-rsvp-link.com" target="_blank" className={" md:text-md lg:text-lg"}>
+                  Review All Workshop
+                </Link>
+              </button>
             </div>
           </div>
         </div>

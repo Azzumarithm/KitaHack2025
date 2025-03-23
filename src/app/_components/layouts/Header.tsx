@@ -389,10 +389,10 @@ const Header = ({ }) => {
                 <nav className="mx-6 lg:ml-24 lg:mr-24 flex xl:grid xl:grid-cols-[1fr_auto_1fr] items-center h-full min-w-screen">
 
                     <div className={"hidden xl:flex xl:items-center xl:mr-auto xl:ml-10"}>
-                        <Menubar className={"bg-transparent border-none active:bg-transparent focus:bg-transparent focus-visible:bg-transparent data-[state=open]:bg-transparent aria-selected:bg-transparent group-active:bg-transparent shadow-md text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                        <Menubar className={"bg-transparent border-none shadow-none data-[state=open]:bg-transparent  text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
                             <MenubarMenu>
-                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
-                                    <Link href={"/#faqs"}>
+                                <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                    <Link href={"/#faqs-section"}>
                                         FAQs
                                     </Link>
 
@@ -400,15 +400,15 @@ const Header = ({ }) => {
                             </MenubarMenu>
 
                             <MenubarMenu>
-                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
-                                    <Link href={"/#sponsors"}>
+                                <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                    <Link href={"/#about-section"}>
                                         About
                                     </Link>
                                 </MenubarTrigger>
                             </MenubarMenu>
 
                             <MenubarMenu>
-                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
                                     <Link href={"/#sponsors"}>
                                         AI Tools
                                     </Link>
@@ -416,7 +416,7 @@ const Header = ({ }) => {
                             </MenubarMenu>
 
                             <MenubarMenu>
-                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                <MenubarTrigger className={"bg-transparent border-none  data-[state=open]:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
                                     <Link href={"/#sponsors"}>
                                         Criteria
                                     </Link>
@@ -424,7 +424,7 @@ const Header = ({ }) => {
                             </MenubarMenu>
 
                             {/* <MenubarMenu>
-                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Details</MenubarTrigger>
+                                <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white  data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Details</MenubarTrigger>
                                 <MenubarContent align="start" className={"max-h-64 overflow-y-auto hidden lg:block backdrop-blur-md"}>
                                     {moreContents.map((moreContent) => (
                                         <MoreItem
@@ -495,13 +495,15 @@ const Header = ({ }) => {
                         </Menubar>
 
 
+
+
                         {/* Shadcn for nav links */}
 
                         <div className={"hidden xl:block"}>
-                            <Menubar className={"bg-transparent border-none active:bg-transparent focus:bg-transparent focus-visible:bg-transparent data-[state=open]:bg-transparent aria-selected:bg-transparent group-active:bg-transparent shadow-md text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                            <Menubar className={"bg-transparent border-none shadow-none data-[state=open]:bg-transparent  text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
 
                                 <MenubarMenu>
-                                    <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Chapters</MenubarTrigger>
+                                    <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Sponsors</MenubarTrigger>
                                 </MenubarMenu>
                                 <MenubarMenu>
                                     <MenubarTrigger className={`bg-transparent border-none data-[state=open]:bg-white/10  text-white data-[state=open]:text-white `}>Events</MenubarTrigger>
@@ -533,11 +535,14 @@ const Header = ({ }) => {
                             </Menubar>
                         </div>
 
+
                         <Link className={"hidden xl:block"} href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/viewform?usp=dialog">
-                            <button className="bg-white/30 text-white font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/50 shadow-lg hover:bg-white/40 transition-all duration-300">
-                                Register Now
+                            <button className="bg-white/30 text-white font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/50 shadow-lg hover:bg-white/40 transition-all duration-300 w-fit">
+                                Submit Prototype
                             </button>
                         </Link>
+
+
                     </div>
 
 
