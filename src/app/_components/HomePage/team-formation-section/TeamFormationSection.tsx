@@ -23,10 +23,11 @@ const TeamFormationSection = () => {
 
                 <div className="container mx-auto z-10">
                     <div className="flex justify-center">
-                        <span className="bg-purple-100 inline-flex items-center rounded-full border-purple-500 px-3 py-1 text-sm text-purple-700">
+                        <span className="mx-auto bg-purple-100 inline-flex items-center rounded-full border border-purple-500 px-3 py-1 text-sm text-purple-700">
                             <GlobeAltIcon className="h-4 w-4 text-purple-500" />
                             <span className="ml-1">Team Formation</span>
                         </span>
+
                     </div>
 
                     <div className={"flex flex-col items-center px-12 md:px-12 xl:px-40"}>

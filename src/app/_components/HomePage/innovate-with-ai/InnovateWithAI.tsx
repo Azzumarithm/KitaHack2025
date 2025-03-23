@@ -55,12 +55,11 @@ const InnovateWithAISection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: false }}
-            id="annovate-with-ai"
             className="container px-6 mx-auto">
             <div className="px-6 text-gray-800 md:mx-12 lg:text-left xl:mx-52"></div>
             <div className="flex flex-col justify-center items-center text-center gap-4">
                 {/* Badge Componenet */}
-                <span className="bg-[#F6F3FF] inline-flex items-center rounded-full border border-[#7C3AED] px-3 py-1 text-sm text-purple-700">
+                <span id="about-section" className="bg-[#F6F3FF] inline-flex items-center rounded-full border border-[#7C3AED] px-3 py-1 text-sm text-purple-700">
                     <GlobeAltIcon className="h-4 w-4 text-purple-500" />
                     <span className="ml-1">About</span>
                 </span>

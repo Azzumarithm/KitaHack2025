@@ -10,7 +10,7 @@ import TeamFormationSection from "./_components/HomePage/team-formation-section/
 // import FAQsSection from "./_components/HomePage/faqs-section/FAQsSection";
 // import AIinfoSection from "./_components/HomePage/ai-info-section/AIinfoSection";
 
-import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
+
 
 import InnovateWithAISection from "./_components/HomePage/innovate-with-ai/InnovateWithAI";
 
@@ -18,6 +18,8 @@ import SdgAISection from "./_components/HomePage/sdg-ai-section/SdgAISection";
 import JudgingCriteriaNew from "./_components/HomePage/judging-criteria-new/judging-criteria";
 import BannerHashtagSection from "./_components/HomePage/banner-hashtag-section/BannerHashtagSection";
 import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionNew";
+import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
+// import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
 
 
 export default function Home() {
@@ -26,8 +28,8 @@ export default function Home() {
 
       <HomeLandingSection />
 
-      <EventShowcaseSection />
-
+      <EventShowcaseSection/>
+      
       <InnovateWithAISection />
 
       <BannerHashtagSection/>

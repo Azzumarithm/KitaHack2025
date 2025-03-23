@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
+import { motion } from "framer-motion";
 
 const EventShowcaseSection: React.FC = () => {
 
@@ -25,7 +26,12 @@ const EventShowcaseSection: React.FC = () => {
 
 
   return (
-    <section className="flex items-center lg:mt-20 z-10">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false }}
+      className="flex items-center lg:mt-20 z-10">
       <div className="container mx-auto z-10">
 
 
@@ -54,7 +60,8 @@ const EventShowcaseSection: React.FC = () => {
 
             {/* Workshop Title */}
             <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
-              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Google Workspace with Appsheet</span>
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Google Workspace</span>
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent"> with Appsheet</span>
             </h2>
 
             {/* Event Schedule and Agenda */}
@@ -82,7 +89,7 @@ const EventShowcaseSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
