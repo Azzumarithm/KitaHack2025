@@ -1,15 +1,15 @@
 import EventShowcase from "../../Template/EventShowcase/EventShowcase";
 
 const eventDetails = {
-    type: "Workshop",
-    title: "Google Workspace with Appsheet",
-    date: "8th March 2025, 10:00am – 12:00pm",
-    agenda: "Introduction to Neural Networks, Introduction to TensorFlow, Computer Vision - Image Recognition, and Image Classification using CNN.",
-    lightImage: "/images/Left-Image.png",
-    darkImage: "/images/Left-Image-dark.png",
-    imageAlt: "Workshop Poster with Speaker",
-    rsvpLink: "https://your-rsvp-link.com",
-    reviewLink: "https://your-all-workshops-link.com",
+  type: "Workshop",
+  title: "Google Vertex AI & RAG Workshop",
+  date: "24th March 2025, 6:00 PM - 7:30 PM",
+  agenda: "Explore the power of Vertex AI & RAG and discover the future of machine learning applications with Google Cloud!.",
+  lightImage: "/images/workshops/VertexAI.jpeg",
+  darkImage: "/images/workshops/VertexAI.jpeg",
+  imageAlt: "Workshop Poster with Speaker",
+  rsvpLink: "https://gdg.community.dev/events/details/google-gdg-on-campus-monash-university-malaysia-selangor-malaysia-presents-google-vertex-ai-amp-rag-workshop/cohost-gdg-on-campus-monash-university-malaysia-selangor-malaysia",
+  reviewLink: "https://your-all-workshops-link.com",
 };
 
 

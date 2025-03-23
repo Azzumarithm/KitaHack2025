@@ -141,22 +141,22 @@ const eventsContents: EventContent[] = [
 
 const moreContents: { title: string; href: string; description: string; src: string }[] = [
     {
-        title: "What is KitaHack",
-        href: "/#kitahack-info",
+        title: "FAQs",
+        href: "/#faqs-section",
         description:
             "Get a better understanding of KitaHack 2025",
         src: "images/question-mark-circle.svg"
     },
     {
-        title: "What is Sustainable Development Goals?",
-        href: "/#sdg-info",
+        title: "About",
+        href: "/#about-section",
         description:
             "Join to preserve the environment!",
         src: "images/earth.svg"
     },
     {
-        title: "What is AI?",
-        href: "/#ai-info",
+        title: "AI Tools",
+        href: "/#sdg-ai",
         description:
             "Discover AI Technologies",
         src: "images/artificial-intelligence-04.svg"
@@ -170,7 +170,7 @@ const moreContents: { title: string; href: string; description: string; src: str
     },
     {
         title: "Judging Criteria",
-        href: "/#judging-criteria",
+        href: "/#criteria",
         description:
             "Take note",
         src: "images/tick-circle-outline.svg"

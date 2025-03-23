@@ -45,7 +45,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ event }) => {
             className="flex items-center lg:mt-20 z-10"
         >
             <div className="container mx-auto z-10">
-                <div className="flex flex-col-reverse lg:flex-row items-center gap-6 px-12 md:px-12 xl:px-40 py-12">
+                <div className="flex flex-col-reverse lg:flex-row items-center gap-16 px-12 md:px-12 xl:px-40 py-12">
                     {/* Left Section: Event Image */}
                     <div className="relative w-full md:w-[100%] flex justify-center">
                         <div className="relative">
@@ -54,6 +54,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ event }) => {
                                 alt={event.imageAlt}
                                 width={900}
                                 height={630}
+                                className={"rounded-lg shadow-2xl shadow-blue-400"}
                             />
                         </div>
                     </div>

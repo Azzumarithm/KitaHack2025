@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -27,11 +28,11 @@ const Footer = () => {
                 <div className="col-span-1 flex flex-col gap-4 text-sm text-center md:text-left">
                     <p className="font-bold">Details</p>
                     <ul className="flex flex-col gap-4">
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is KitaHack?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is SDG?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is Google AI?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">Team Formation</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">Judging Criteria </a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#hero">What is KitaHack?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#about-section">What is SDG?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#sdg-ai">What is Google AI?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#team-formation">Team Formation</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#criteria">Judging Criteria </a></li>
                     </ul>
                 </div>
             </div>
