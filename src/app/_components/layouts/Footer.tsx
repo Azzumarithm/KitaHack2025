@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+
 const Footer = () => {
     return (
         <footer className="flex flex-col text-gray-600 dark:text-gray-400 w-full relative">
-            <img src="/images/gradient-footer.png" alt="Gradient Navbar" className="absolute top-12 md:top-4 2xl:hidden left-0 w-full" />
+            <img src="/images/gradient-footer.svg" alt="Gradient Navbar" className="absolute top-12 md:top-1 2xl:hidden left-0 w-full" />
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 grid-row-3 md:grid-row-1 gap-8 md:gap-12 lg:gap-8 z-10 bg-white dark:bg-[hsl(0,0%,6.9%)] mt-24 py-8 md:py-14 md:px-24">
                 <div className="col-span-1 md:col-span-2 lg:col-span-4 gap-1 flex flex-col text-center md:text-left mx-auto md:mx-0">
                     <Image
@@ -15,23 +16,23 @@ const Footer = () => {
                         priority
                     />
                     <p className="md:ml-6 lg:ml-7">Innovate, Build, and Compete!</p>
-                    <a className="md:ml-6 lg:ml-7 mt-2" href="#"><button className="py-[7px] px-[17px] rounded-[55px] border border-[#1D68E5] text-[#1D68E5] hover:text-white hover:bg-[#1D68E5] transition-colors duration">Register Now</button></a>
+                    <a className="md:ml-6 lg:ml-7 mt-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/closedform"><button className="py-[7px] px-[17px] rounded-[55px] border border-[#1D68E5] text-[#1D68E5] hover:text-white hover:bg-[#1D68E5] transition-colors duration">Register Now</button></a>
                 </div>
                 <div className="col-span-1 flex flex-col gap-4 text-sm text-center md:text-left">
-                    <p>Legals</p>
+                    <p className="font-bold">Legals</p>
                     <ul className="flex flex-col gap-4">
                         <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="">Terms and Conditions</a></li>
                         <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="">Rules and Regulations</a></li>
                     </ul>
                 </div>
                 <div className="col-span-1 flex flex-col gap-4 text-sm text-center md:text-left">
-                    <p>Details</p>
+                    <p className="font-bold">Details</p>
                     <ul className="flex flex-col gap-4">
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is KitaHack?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is SDG?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">What is Google AI?</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">Team Formation</a></li>
-                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="#">Judging Criteria </a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#hero">What is KitaHack?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#about-section">What is SDG?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#sdg-ai">What is Google AI?</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#team-formation">Team Formation</a></li>
+                        <li className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"><a href="/#criteria">Judging Criteria </a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +68,7 @@ const Footer = () => {
                     </div>
                     <div className="mt-8 md:order-1 md:mt-0">
                         <p className="text-xs leading-5 text-center text-gray-500 dark:text-gray-400">
-                            &copy; 2025 GDG Malaysia&trade;. All Rights Reserved.
+                            &copy; 2025 GDGoC Malaysia&trade;. All Rights Reserved.
                         </p>
                     </div>
                 </div>
