@@ -146,7 +146,7 @@ const HomeLandingSection = () => {
                                 inspiring sessions, and more.
                             </p>
                             {/* Buttons */}
-                            <div className="flex space-x-4 justify-center lg:justify-start">
+                            <div className="flex flex-col gap-5 sm:flex-row sm:space-x-4 justify-center lg:justify-start">
                                 <a id="knowMoreButton" href="/#kitahack-info">
                                     <span className="text-center inline-block w-44 px-7 py-3 text-[#1D68E5] border border-[#1D68E5] rounded-full">
                                         Know More
@@ -154,7 +154,7 @@ const HomeLandingSection = () => {
                                     </span>
                                 </a>
                                 <a id="registerButton" href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                                    <span className="text-center inline-block w-40 px-7 py-3 bg-[#1D68E5] text-white rounded-full">
+                                    <span className="text-center inline-block w-44 px-7 py-3 bg-[#1D68E5] text-white rounded-full">
                                         Register Now
                                     </span>
                                 </a>
