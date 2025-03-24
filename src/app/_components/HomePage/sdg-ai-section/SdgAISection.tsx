@@ -89,7 +89,7 @@ const SdgAISection = () => {
                                     alt="sdg-ai"
                                     width={500}
                                     height={350}
-                                    className="rounded-lg h-full w-full flex justify-center items-center"
+                                    className="rounded-lg h-full w-full object-cover"
                                     unoptimized
                                 />
                                 <div className="relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all  bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container" style={{
