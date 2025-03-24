@@ -83,13 +83,13 @@ const SdgAISection = () => {
 
 
                         <div className="flex justify-center pt-16 px-12 md:px-12 xl:px-40 ">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10 container">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10">
                                 <Image
                                     src="/images/homepage/sdgAI/sdg-ai.png"
                                     alt="sdg-ai"
                                     width={500}
                                     height={350}
-                                    className="rounded-lg h-full w-full flex justify-center items-center"
+                                    className="rounded-lg h-full w-full object-cover"
                                     unoptimized
                                 />
                                 <div className="relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all  bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container" style={{
