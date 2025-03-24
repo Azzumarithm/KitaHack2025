@@ -471,7 +471,10 @@ const Header = ({ }) => {
                         </Menubar>
                     </div>
                     <div className="">
-                        <Link href={"/"}>
+                        <Link href={"/"} className={"block md:hidden"}>
+                            <Image src="/images/kitahack-mobile.svg" alt="" width={200} height={300} className="max-h-[40px] max-w-[40px] md:max-h-[60px] md:max-w-[60px] cursor-pointer xl:mx-5" />
+                        </Link>
+                        <Link href={"/"} className={"hidden md:block"}>
                             <Image src="/images/KitaHack2025-Logo-new.svg" alt="" width={200} height={300} className="max-h-[180px] max-w-[180px] md:max-h-[200px] md:max-w-[200px] cursor-pointer xl:mx-5" />
                         </Link>
                     </div>
@@ -552,7 +555,7 @@ const Header = ({ }) => {
                         </div>
 
 
-                        <Link className={"hidden xl:block"} href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/viewform?usp=dialog">
+                        <Link className={"hidden xl:block"} href="https://www.tinyurl.com/submit-kitahack25">
                             <button className="bg-white/30 text-white font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/50 shadow-lg hover:bg-white/40 transition-all duration-300 w-fit">
                                 Submit Prototype
                             </button>

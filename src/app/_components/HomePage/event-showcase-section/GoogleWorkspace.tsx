@@ -75,13 +75,13 @@ const EventShowcaseSection: React.FC = () => {
             <div className="flex gap-3 justify-center lg:justify-start mt-6">
               {/* View All Workshops Button */}
               <button className="px-12 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md bg-transparent hover:bg-blue-600 hover:text-white transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-600 dark:hover:text-white">
-                <Link href="https://your-all-workshops-link.com" target="_blank" className="md:text-md lg:text-lg">
+                <Link href="https://your-all-workshops-link.com" target="_blank" className="text-sm md:text-md lg:text-lg">
                   RSVP NOW
                 </Link>
               </button>
 
               <button className="px-12 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
-                <Link href="https://your-rsvp-link.com" target="_blank" className={" md:text-md lg:text-lg"}>
+                <Link href="https://your-rsvp-link.com" target="_blank" className={"text-sm md:text-md lg:text-lg"}>
                   Review All Workshop
                 </Link>
               </button>
