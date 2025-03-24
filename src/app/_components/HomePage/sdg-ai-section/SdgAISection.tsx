@@ -81,38 +81,43 @@ const SdgAISection = () => {
                         viewport={{ once: false }}
                     >
 
+                        <div className="flex justify-center pt-16 px-6 md:px-12 xl:px-40">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-screen-xl">
 
-                        <div className="flex justify-center pt-16 px-12 md:px-12 xl:px-40 ">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10 container">
-                                <Image
-                                    src="/images/homepage/sdgAI/sdg-ai.png"
-                                    alt="sdg-ai"
-                                    width={500}
-                                    height={350}
-                                    className="rounded-lg h-full w-full object-cover"
-                                    unoptimized
-                                />
-                                <div className="relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all  bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container" style={{
-                                    backgroundSize: "70%",
-                                    backgroundPosition: "top right",
-                                    backgroundRepeat: "no-repeat"
-                                }} >
-                                    <div className={"z-10 p-8 md:p-16 space-y-4"}>
-                                        <h1 className="relative text-lg font-semibold text-blue-600 z-10">SUSTAINABLE DEVELOPMENT GOALS</h1>
-
-                                        <p className={"relative z-10 italic text-gray-700 dark:text-gray-400"}>In 2015, the United Nations established 17 Sustainable Development Goals (SDGs) to be achieved by 2030, aiming to end poverty, ensure prosperity, and protect the planet. These goals were agreed upon by all 193 United Nations Member States as a global blueprint for a better future.</p>
-
-                                    </div>
-                                    {/* <Image
-                                src={pattern}
-                                alt="Background"
-                                width={350}
-                                height={300}
-                                className="absolute top-0 right-0 rounded-2xl z-0"
-                            /> */}
+                                {/* Image Container */}
+                                <div className="w-full h-full flex-1 min-w-0">
+                                    <Image
+                                        src="/images/homepage/sdgAI/sdg-ai.png"
+                                        alt="sdg-ai"
+                                        width={500}
+                                        height={350}
+                                        className="rounded-lg w-full h-full object-cover aspect-[4/3]"
+                                        unoptimized
+                                    />
                                 </div>
+
+                                {/* Text Content */}
+                                <div
+                                    className="relative w-full h-full flex-1 min-w-0 shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all flex flex-col justify-center"
+                                    style={{
+                                        backgroundSize: "70%",
+                                        backgroundPosition: "top right",
+                                        backgroundRepeat: "no-repeat"
+                                    }}
+                                >
+                                    <div className="z-10 p-8 md:p-16 space-y-4">
+                                        <h1 className="relative text-lg font-semibold text-blue-600 z-10">
+                                            SUSTAINABLE DEVELOPMENT GOALS
+                                        </h1>
+                                        <p className="relative z-10 italic text-gray-700 dark:text-gray-400">
+                                            In 2015, the United Nations established 17 Sustainable Development Goals (SDGs) to be achieved by 2030, aiming to end poverty, ensure prosperity, and protect the planet. These goals were agreed upon by all 193 United Nations Member States as a global blueprint for a better future.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </motion.div>
 
                     <motion.div
