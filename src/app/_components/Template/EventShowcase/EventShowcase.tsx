@@ -81,19 +81,24 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ event }) => {
                         </p>
 
                         {/* Action Buttons */}
-                        <div className="flex gap-3 justify-center lg:justify-start mt-6">
+                        <div className="flex flex-col gap-5 sm:flex-row justify-center lg:justify-start mt-6">
                             {/* View All Workshops Button */}
-                            <button className="px-12 py-3 text-lg text-blue-600 border border-blue-600 rounded-full shadow-md bg-transparent hover:bg-blue-600 hover:text-white transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-600 dark:hover:text-white">
-                                <Link href={event.rsvpLink} target="_blank" className="md:text-md lg:text-lg">
-                                    RSVP NOW
-                                </Link>
-                            </button>
+                            <div className={"flex justify-center"}>
+                                <button className="px-12 py-3 text-blue-600 border border-blue-600 rounded-full shadow-md bg-transparent hover:bg-blue-600 hover:text-white transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-600 dark:hover:text-white">
+                                    <Link href={event.rsvpLink} target="_blank" className="md:text-md lg:text-lg">
+                                        RSVP NOW
+                                    </Link>
+                                </button>
 
-                            <button className="px-12 py-3 text-lg text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
-                                <Link href={event.reviewLink} target="_blank" className={" md:text-md lg:text-lg"}>
-                                    Review All Workshop
-                                </Link>
-                            </button>
+                            </div>
+
+                            <div className={"flex justify-center"}>
+                                <button className="px-12 py-3 text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
+                                    <Link href={event.reviewLink} target="_blank" className={"md:text-md lg:text-lg"}>
+                                        Review All Workshop
+                                    </Link>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

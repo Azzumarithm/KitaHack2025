@@ -16,7 +16,7 @@ const Footer = () => {
                         priority
                     />
                     <p className="md:ml-6 lg:ml-7">Innovate, Build, and Compete!</p>
-                    <a className="md:ml-6 lg:ml-7 mt-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeDYPVS5cLgbcmZulvzG-ElgBJJGd94WIdtpZP56IfOwp1F6Q/closedform"><button className="py-[7px] px-[17px] rounded-[55px] border border-[#1D68E5] text-[#1D68E5] hover:text-white hover:bg-[#1D68E5] transition-colors duration">Register Now</button></a>
+                    <a className="md:ml-6 lg:ml-7 mt-2" href="https://www.tinyurl.com/submit-kitahack25"><button className="py-[7px] px-[17px] rounded-[55px] border border-[#1D68E5] text-[#1D68E5] hover:text-white hover:bg-[#1D68E5] transition-colors duration">Submit Prototype</button></a>
                 </div>
                 <div className="col-span-1 flex flex-col gap-4 text-sm text-center md:text-left">
                     <p className="font-bold">Legals</p>
