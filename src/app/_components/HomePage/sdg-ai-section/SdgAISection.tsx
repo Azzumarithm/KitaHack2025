@@ -83,7 +83,7 @@ const SdgAISection = () => {
 
 
                         <div className="flex justify-center pt-16 px-12 md:px-12 xl:px-40 ">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10 container">
                                 <Image
                                     src="/images/homepage/sdgAI/sdg-ai.png"
                                     alt="sdg-ai"
