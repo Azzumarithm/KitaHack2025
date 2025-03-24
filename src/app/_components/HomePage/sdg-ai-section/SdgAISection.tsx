@@ -81,7 +81,7 @@ const SdgAISection = () => {
                         viewport={{ once: false }}
                     >
 
-                        <div className="flex justify-center pt-16 px-6 md:px-12 xl:px-40">
+                        <div className="flex justify-center pt-16 px-12 md:px-12 xl:px-40">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-screen-xl">
 
                                 {/* Image Container */}
@@ -98,7 +98,7 @@ const SdgAISection = () => {
 
                                 {/* Text Content */}
                                 <div
-                                    className="relative w-full h-full flex-1 min-w-0 shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all flex flex-col justify-center"
+                                    className="relative w-full h-full flex-1 min-w-0 shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] container flex flex-col justify-center"
                                     style={{
                                         backgroundSize: "70%",
                                         backgroundPosition: "top right",
