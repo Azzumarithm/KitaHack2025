@@ -2,7 +2,7 @@
 "use client";
 
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -68,32 +68,43 @@ const FAQsSectionNew = () => {
         <div className="flex flex-col lg:flex-row justify-between w-full py-10">
 
           {/* Left Side */}
-          <div className="w-full lg:w-3/4 space-y-4 lg:mr-3">
+          <div className="w-full space-y-4 lg:mr-3">
             {faqs.map((faq, index) => (
               <motion.div key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="border border-gray-300 dark:border-gray-800 rounded-xl">
+                className="border border-gray-300 dark:border-gray-800 rounded-xl ">
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="flex justify-between items-center w-full text-left p-4 text-lg font-semibold text-[#4285F4]"
                 >
-                  {faq.q}
+                  <p className={"w-5/6"}>
+                    {faq.q}
+                  </p>
                   {openIndex === index ? (
                     <ChevronUp className="w-5 h-5" />
                   ) : (
                     <ChevronDown className="w-5 h-5" />
                   )}
                 </button>
-                {openIndex === index && (
-                  <div>
-                    <p className="text-[#5A5A5A] text-sm dark:text-gray-400 px-4 mb-4 italic mr-28">
-                      {faq.a}
-                    </p>
-                  </div>
-                )}
+                <AnimatePresence>
+                  {openIndex === index && (
+                    <motion.div
+                      key="content"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <p className="text-[#5A5A5A] text-sm dark:text-gray-400 px-4 mb-4 italic w-5/6">
+                        {faq.a}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             ))}
           </div>

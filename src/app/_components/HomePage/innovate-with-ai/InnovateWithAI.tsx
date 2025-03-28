@@ -16,7 +16,7 @@ const InnovateWithAISection = () => {
         {
             id: 2,
             span: "md:col-span-2",
-            background: "bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] p-4 lg:p-6 pr-10 lg:pr-28",
+            background: "bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] p-6 lg:p-6 pr-10 lg:pr-28",
             style: { backgroundSize: "60%" },
             title: "EMPOWERING INNOVATORS FOR AI & SDG CHALLENGES",
             text: "KitaHack launched in 2021, is a nationwide collaboration with all GDG chapters in Malaysia. It's more than just a hackathon, it's a platform for dedicated and talented individuals to develop their skills, tackle Real-World AI & SDG - aligned Challenges and prepare participants for the Google Solution Challenge.",
@@ -108,13 +108,8 @@ const InnovateWithAISection = () => {
                         >
                             {grid.id === 3 && (
                                 <>
-                                    <div className="absolute top-[15%] left-0 transform -translate-x-1/2 hidden lg:block">
-                                        <div className="w-16">{grid.bubblesvai}</div>
-                                        <div className="absolute top-6 left-10 w-48">{grid.bubblesgas}</div>
-                                    </div>
-                                    <div className="absolute top-[15%] right-[-7%] transform -translate-x-1/2 hidden lg:block">
-                                        <div className="w-16">{grid.bubblesvai}</div>
-                                        <div className="absolute top-6 right-10 w-48">{grid.bubblesgmi}</div>
+                                    <div>
+                                        <img className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="images/bubbles.png" alt="" />
                                     </div>
                                 </>
                             )}
@@ -123,15 +118,15 @@ const InnovateWithAISection = () => {
                                 grid.id !== 3 ? (
                                     <>
                                         <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                        <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-full md:w-[85%]">
-                                            <i>{grid.text}</i>
+                                        <p className="italic text-gray-600 text-sm md:text-base dark:text-gray-400 w-full">
+                                            {grid.text}
                                         </p>
                                     </>
                                 ) : (
                                     <div className="flex flex-col gap-2 items-start text-left md:items-center md:text-center">
                                         <>
                                             <h2 className="text-blue-600 font-bold text-sm md:text-base">{grid.title}</h2>
-                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-full lg:w-[70%]">
+                                            <p className="text-gray-600 text-sm md:text-base dark:text-gray-400 w-full lg:w-[85%]">
                                                 <i>{grid.text}</i>
                                             </p>
                                         </>

@@ -6,7 +6,7 @@ import { GlobeAltIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 // import { useEffect, useState } from "react";
 
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 const SdgAISection = () => {
     // const { theme, resolvedTheme } = useTheme();
@@ -156,39 +156,53 @@ const SdgAISection = () => {
                                     </div>
 
                                 </div>
-                                <div className="relative flex  flex-col justify-between gap-4 container">
+                                
+                                <div className="relative flex flex-col justify-between gap-4 container">
                                     {aiTools.map((tool, index) => (
                                         <motion.div
                                             key={index}
                                             initial={{ opacity: 0, y: 50 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5 }}
-                                            layout
+                                            layout // Ensure smooth height changes
                                             viewport={{ once: false }}
                                         >
-                                            <div
-                                                className="group relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all flex items-center px-5 py-3"
+                                            <motion.div
+                                                layout
+                                                className="group relative shadow-lg rounded-2xl bg-white outline outline-2 dark:bg-[#1D1D1D] dark:outline-2 outline-[#DBDBDB] dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 cursor-pointer transition-all flex flex-col px-5 py-3 "
                                             >
-                                                <div className="flex items-center space-x-5 group-hover:flex-col group-hover:items-start group-hover:justify-center group-hover:space-x-0 ">
-
-
-                                                    <div className="flex items-center space-x-5 group-hover:space-x-2 ">
-                                                        <Image
-                                                            src={tool.imageSrc}
-                                                            alt="Logo"
-                                                            width={50}
-                                                            height={50}
-                                                            className="w-10 h-10 sm:w-16 sm:h-16 transition-transform group-hover:size-5"
-                                                        />
-                                                        <span className="text-blue-600 font-bold text-xl sm:text-4xl group-hover:text-sm flex items-center">
-                                                            {tool.name}
-                                                        </span>
-                                                    </div>
-                                                    <p className="hidden group-hover:block text-gray-600 dark:text-gray-400 text-sm mt-1 italic">
-                                                        {tool.description}
-                                                    </p>
+                                                <div className="flex items-center gap-5 transition-all duration-300 group-hover:flex-row group-hover:gap-2 group-hover:items-start group-hover:space-x-0">
+                                                    <Image
+                                                        src={tool.imageSrc}
+                                                        alt="Logo"
+                                                        width={50}
+                                                        height={50}
+                                                        className="w-10 h-10 sm:w-16 sm:h-16 transition-all duration-300 group-hover:w-5 group-hover:h-5"
+                                                    />
+                                                    <motion.span
+                                                        layout
+                                                        className="text-blue-600 font-bold text-xl sm:text-2xl md:text-3xl xl:text-4xl  group-hover:text-sm flex items-center"
+                                                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                    >
+                                                        {tool.name}
+                                                    </motion.span>
                                                 </div>
-                                            </div>
+
+                                                <AnimatePresence>
+                                                    {/** Description fades in and resizes smoothly when hovered */}
+                                                    {tool.description && (
+                                                        <motion.p
+                                                            initial={{ opacity: 0, height: 0 }}
+                                                            animate={{ opacity: 1, height: "auto" }}
+                                                            exit={{ opacity: 0, height: 0 }}
+                                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                            className="hidden group-hover:block text-gray-600 dark:text-gray-400 text-sm mt-1 italic"
+                                                        >
+                                                            {tool.description}
+                                                        </motion.p>
+                                                    )}
+                                                </AnimatePresence>
+                                            </motion.div>
                                         </motion.div>
                                     ))}
                                 </div>
