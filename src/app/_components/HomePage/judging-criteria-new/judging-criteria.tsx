@@ -83,11 +83,11 @@ const JudgingCriteriaSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: false }}
-                        className="flex flex-col w-full gap-4 md:gap-8 lg:gap-12"
+                        className="flex flex-col w-full gap-8 md:gap-8 lg:gap-12"
                     >
                         <div className="relative flex justify-center">
                             {/* Main card */}
-                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 sm:w-3/5 md:w-2/3 py-2 lg:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:border-[#4285F4] transition-colors duration-200"
+                            <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:80%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/5 sm:w-3/5 md:w-2/3 py-2 lg:py-6 flex flex-col gap-1 md:gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:border-[#4285F4] transition-colors duration-200"
                             >
                                 <img src="images/layers.png" alt="Layers Icon" className="w-6" />
                                 <h3 className="text-[#116BFF] font-semibold text-xl md:text-2xl">IMPACT</h3>
@@ -95,7 +95,7 @@ const JudgingCriteriaSection = () => {
                             </div>
                             {/* Background gradient effect */}
                             <img
-                                className="absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
+                                className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] md:w-[600px] lg:w-[700px] border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
                                 src="images/Mask group.svg"
                                 alt=""
                             />
@@ -143,7 +143,7 @@ const JudgingCriteriaSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: false }}
-                        className="flex flex-col w-full gap-4 md:gap-8 lg:gap-12"
+                        className="flex flex-col w-full gap-8 md:gap-8 lg:gap-12"
                     >
                         <div className="relative flex justify-center">
                             {/* Main card */}
@@ -155,7 +155,7 @@ const JudgingCriteriaSection = () => {
                             </div>
                             {/* Background gradient effect */}
                             <img
-                                className="absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
+                                className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] md:w-[600px] lg:w-[700px] border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
                                 src="images/Mask group.svg"
                                 alt=""
                             />
@@ -204,25 +204,25 @@ const JudgingCriteriaSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: false }}
-                    className="flex flex-col w-full gap-10 lg:gap-14"
+                    className="flex flex-col w-full gap-8 lg:gap-14"
                 >
                     <div className="relative flex w-full justify-center">
                         {/* Main card */}
-                        <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:70%] sm:bg-[length:45%] md:bg-[length:40%] lg:bg-[length:35%] xl:bg-[length:30%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 sm:w-3/5 md:w-2/3 p-2 lg:py-10 flex flex-col gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:border-[#4285F4] transition-colors duration-200"
+                        <div className="bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-[right_top] bg-[length:70%] sm:bg-[length:45%] md:bg-[length:40%] lg:bg-[length:35%] xl:bg-[length:30%] dark:bg-[#1d1d1d] bg-no-repeat relative z-10 bg-white rounded-2xl shadow-md w-3/4 sm:w-3/5 md:w-2/3 p-4 lg:py-10 flex flex-col gap-2 items-center border border-[#d8d8d8] dark:border-gray-600 hover:border-[#4285F4] dark:hover:border-[#4285F4] transition-colors duration-200"
                         >
                             <img src="images/layers.png" alt="Layers Icon" className="w-6" />
-                            <h3 className="text-[#116BFF] font-semibold text-lg md:text-2xl">
+                            <h3 className="text-[#116BFF] font-semibold text-md md:text-2xl">
                                 ENSURING FAIR AND IMPARTIAL JUDGING
                             </h3>
                         </div>
                         {/* Background gradient effect */}
                         <img
-                            className="hidden md:block absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl"
+                            className="hidden md:block absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[760px] md:w-[1200px] lg:w-[1400px] border border-[#BDBDBD] dark:border-gray-600 rounded-xl"
                             src="images/Mask group Wide.svg"
                             alt=""
                         />
                         <img
-                            className="md:hidden absolute top-1/2 border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
+                            className="block md:hidden absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] md:w-[600px] lg:w-[700px] border border-[#BDBDBD] dark:border-gray-600 rounded-xl max-h-20 md:max-h-30 lg:max-h-40"
                             src="images/Mask group.svg"
                             alt=""
                         />
@@ -251,7 +251,7 @@ const JudgingCriteriaSection = () => {
                     </AnimatePresence>
 
                     <button
-                        onClick={() => setShowJudging(showJudging)}
+                        onClick={() => setShowJudging(!showJudging)}
                         className="text-gray-400 font-semibold text-sm self-center md:hidden"
                     >
                         {showJudging ? "See Less" : "See More"}
