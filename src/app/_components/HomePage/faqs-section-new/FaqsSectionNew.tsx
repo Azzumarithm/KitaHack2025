@@ -42,13 +42,13 @@ const FAQsSectionNew = () => {
   };
 
   return (
-    <section id="faqs-section" className="container px-6 mx-auto">
+    <section id="faqs-section" className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
-        className="px-6 text-gray-800 md:px-12 lg:text-left xl:px-52">
+        className=" text-gray-800 lg:text-left px-6 md:px-12 xl:px-40">
         <div className="flex justify-center">
           <span className="bg-purple-100 inline-flex items-center rounded-full  -purple-500 px-3 py-1 text-sm text-purple-700">
             <GlobeAltIcon className="h-4 w-4 text-purple-500" />
