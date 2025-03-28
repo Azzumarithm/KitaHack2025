@@ -8,9 +8,27 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
 
+
+
 const HomeLandingSection = () => {
 
-    const { theme } = useTheme();
+    // const { theme } = useTheme();
+
+    const { theme, resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+
+
+    // const universitylogo =
+    //     (theme || resolvedTheme) === "dark"
+    //         ? "/images/homepage/sdgAI/Pattern-BG-dark.svg"
+    //         : "/images/homepage/sdgAI/Pattern-BG.svg";
+
     const universityLogos = [
         {
             name: "APU",
@@ -95,14 +113,14 @@ const HomeLandingSection = () => {
     ];
 
     const imageSlideShow = [
-        "/images/slideshow/Copy of IMG_1773.JPG",
-        "/images/slideshow/Copy of IMG_1786.JPG",
+        "/images/slideshow/Copy_of_IMG_1773.JPG",
+        "/images/slideshow/Copy_of_IMG_1786.JPG",
         "/images/slideshow/IMG_0820.JPG",
         "/images/slideshow/IMG_1796.JPG",
         "/images/slideshow/IMG_1809.JPG",
         "/images/slideshow/IMG_1819.JPG",
         "/images/slideshow/IMG_1885.JPG",
-        "/images/slideshow/IMG_4899.HEIC",
+        "/images/slideshow/IMG_4899.jpg",
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -115,6 +133,7 @@ const HomeLandingSection = () => {
         return () => clearInterval(interval); // Cleanup interval on unmount
     }, []);
 
+    if (!mounted) return null;
     return (
         <section className="flex items-center lg:mt-20 z-10">
             <motion.div
@@ -161,7 +180,7 @@ const HomeLandingSection = () => {
                             </div>
                         </div>
                         {/* Pictures */}
-                        <div className="mb-12 lg:mb-0 relative w-full lg:max-w-[456px] aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <div className="mb-12 lg:mb-0 relative w-full lg:max-w-[456px] aspect-[3/2] overflow-hidden rounded-xl shadow-2xl justify-self-end">
                             <img
                                 src={imageSlideShow[currentIndex]}
                                 className="w-full h-full object-cover"
@@ -177,7 +196,7 @@ const HomeLandingSection = () => {
                                     universityLogos.map((uni) => (
                                         <>
                                             <a key={`${uni.name}-${i}`} href={uni.link} target="_blank" rel="noopener noreferrer" className="snap-center flex items-center">
-                                                <Image src={theme === "dark" ? uni.logos.dark : uni.logos.light}
+                                                <Image src={(theme || resolvedTheme) === "dark" ? uni.logos.dark : uni.logos.light}
                                                     alt={uni.name}
                                                     width={300}
                                                     height={100}
