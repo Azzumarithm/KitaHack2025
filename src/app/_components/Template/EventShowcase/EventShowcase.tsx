@@ -85,7 +85,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ event }) => {
                             {/* View All Workshops Button */}
                             <div className={"flex justify-center"}>
                                 <button className="px-12 py-3 text-blue-600 border border-blue-600 rounded-full shadow-md bg-transparent hover:bg-blue-600 hover:text-white transition dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-600 dark:hover:text-white">
-                                    <Link href={event.rsvpLink} target="_blank" className="md:text-md lg:text-lg">
+                                    <Link href={event.rsvpLink} target="_blank" className="md:text-md lg:text-md">
                                         RSVP NOW
                                     </Link>
                                 </button>
@@ -94,7 +94,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ event }) => {
 
                             <div className={"flex justify-center"}>
                                 <button className="px-12 py-3 text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
-                                    <Link href={event.reviewLink} target="_blank" className={"md:text-md lg:text-lg"}>
+                                    <Link href={event.reviewLink} target="_blank" className={"md:text-md lg:text-md"}>
                                         Review All Workshop
                                     </Link>
                                 </button>
