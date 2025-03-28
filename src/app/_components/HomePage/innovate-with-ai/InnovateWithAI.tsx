@@ -109,8 +109,9 @@ const InnovateWithAISection = () => {
                         >
                             {grid.id === 3 && (
 
-
-                                <Image width={1000} height={1000} className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="/images/bubbles.png" alt="" />
+                                <div>
+                                    <Image width={1000} height={1000} className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="/images/Bubbles.png" alt="" />
+                                </div>
 
 
                             )}
