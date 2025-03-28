@@ -108,11 +108,11 @@ const InnovateWithAISection = () => {
                             className={`outline outline-2 outline-[#DBDBDB] dark:outline-2 dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 relative justify-center md:justify-normal dark:bg-[#1D1D1D] bg-white shadow-lg rounded-xl p-6 flex flex-col gap-2 ${grid.span} ${grid.background} bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] bg-[length:40%]`}
                         >
                             {grid.id === 3 && (
-                                <>
-                                    <div>
-                                        <Image width={1000} height={1000} className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="/images/bubbles.png" alt="" />
-                                    </div>
-                                </>
+
+
+                                <Image width={1000} height={1000} className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="/images/bubbles.png" alt="" />
+
+
                             )}
 
                             {grid.content ? grid.content : (
