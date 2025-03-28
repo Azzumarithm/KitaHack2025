@@ -1,6 +1,7 @@
 "use client"
 import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const InnovateWithAISection = () => {
 
@@ -35,7 +36,7 @@ const InnovateWithAISection = () => {
             id: 4,
             span: "col-span-1 row-span-1 md:col-span-1",
             background: "bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] pr-12 lg:pr-28",
-            style: { backgroundSize: "75%" },
+            style: { backgroundSize: "60%" },
             title: "THEME",
             text: "AI & SDG (Sustainable Development Goals) KitaHack focuses on leveraging Artificial Intelligence (AI) to create solutions alligned with the United Nations' 17 Sustainable Development Goals (SDGs).",
         },
@@ -43,7 +44,7 @@ const InnovateWithAISection = () => {
             id: 5,
             span: "row-span-1 col-span-1 md:col-span-1",
             background: "bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] pr-12 lg:pr-28",
-            style: { backgroundSize: "75%" },
+            style: { backgroundSize: "60%" },
             title: "PROBLEM STATEMENT",
             text: "How can Google AI Technologies be leveraged to develop innovative, scalable, and inclusive solutions that address one or more SDG-related challenges, ensuring long-term impact and sustainability?",
         },
@@ -104,12 +105,12 @@ const InnovateWithAISection = () => {
                             viewport={{ once: false }}
                             key={grid.id}
                             style={grid.style}
-                            className={`outline outline-2 outline-[#DBDBDB] dark:outline-2 dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 relative justify-center md:justify-normal dark:bg-[#1D1D1D] bg-white shadow-lg rounded-xl p-6 flex flex-col gap-2 ${grid.span} ${grid.background}`}
+                            className={`outline outline-2 outline-[#DBDBDB] dark:outline-2 dark:outline-gray-800 hover:outline-[#4285F4] dark:hover:outline-[#4285F4] transition-color duration-200 relative justify-center md:justify-normal dark:bg-[#1D1D1D] bg-white shadow-lg rounded-xl p-6 flex flex-col gap-2 ${grid.span} ${grid.background} bg-[url('/images/Pattern-BG.png')] dark:bg-[url('/images/Pattern-Dark-BG.svg')] bg-no-repeat bg-[right_top] bg-[length:40%]`}
                         >
                             {grid.id === 3 && (
                                 <>
                                     <div>
-                                        <img className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="images/bubbles.png" alt="" />
+                                        <Image width={1000} height={1000} className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.08]" src="/images/bubbles.png" alt="" />
                                     </div>
                                 </>
                             )}
