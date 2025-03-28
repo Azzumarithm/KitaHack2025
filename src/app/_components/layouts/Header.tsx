@@ -125,6 +125,10 @@ const eventsContents: EventContent[] = [
                 title: "Vertex Ai And Rag",
                 href: "/VertexAiAndRag",
             }, // use this for no workshops
+            {
+                title: "Google Ai Studio",
+                href: "/GoogleAiStudioWorkshop",
+            }, // use this for no workshops
             // {
             //     title: "Sunway React & Firebase Workshop Series",
             //     href: "/ReactAndFirebaseWorkshop",
