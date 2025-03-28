@@ -2,13 +2,13 @@ import EventShowcase from "../../Template/EventShowcase/EventShowcase";
 
 const eventDetails = {
   type: "Workshop",
-  title: "Google Vertex AI & RAG Workshop",
-  date: "24th March 2025, 6:00 PM - 7:30 PM",
-  agenda: "Explore the power of Vertex AI & RAG and discover the future of machine learning applications with Google Cloud!.",
-  lightImage: "/images/workshops/VertexAI.jpeg",
-  darkImage: "/images/workshops/VertexAI.jpeg",
+  title: "Google AI Studio Workshop",
+  date: "29th March 2025,  01:50 PM – 3:40 PM (MYT)",
+  agenda: "Get hands-on experience with Google AI Studio, a powerful platform for building, testing, and scaling AI-powered applications.",
+  lightImage: "/images/workshops/google-ai-studio.jpg",
+  darkImage: "/images/workshops/google-ai-studio.jpg",
   imageAlt: "Workshop Poster with Speaker",
-  rsvpLink: "https://gdg.community.dev/events/details/google-gdg-on-campus-monash-university-malaysia-selangor-malaysia-presents-google-vertex-ai-amp-rag-workshop/cohost-gdg-on-campus-monash-university-malaysia-selangor-malaysia",
+  rsvpLink: "https://gdg.community.dev/events/details/google-gdg-on-campus-universiti-teknologi-malaysia-johor-bahru-malaysia-presents-google-ai-studio-workshop/",
   reviewLink: "https://your-all-workshops-link.com",
 };
 
