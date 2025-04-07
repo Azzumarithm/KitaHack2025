@@ -51,21 +51,22 @@ export default function AnnouncementBanner({ show }: { show: boolean }) {
                 }`}
         >
             <div className="flex justify-center items-center px-4">
-                <p className="text-xs md:text-md lg:text-md xl:text-lg text-center">
+                <p className="text-white text-xs md:text-md lg:text-md xl:text-xl text-center">
                     {isDeadlinePassed ? (
                         "✅ Prototype Submission Closed! Thank you! ✅"
                     ) : (
                         <>
                             Only {" "}
-                            <span className="font-bold text-red-400">
+                                <span className="font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                                 {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
                             </span>{" "}
                             left to shine!{" "}
+                            <br className={"md:hidden"}/>
                             <a
                                 href="https://www.tinyurl.com/submit-kitahack25"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-semibold text-blue-400 hover:underline"
+                                    className="font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent hover:underline"
                             >
                                 Submit your prototype
                             </a>{" "}
