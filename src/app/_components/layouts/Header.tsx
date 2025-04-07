@@ -55,6 +55,7 @@ import { cn } from "@/lib/utils";
 import { ChevronsUpDown } from "lucide-react"
 import { forwardRef } from "react";
 import Link from "next/link";
+import AnnouncementBanner from "./AnnouncementBanner";
 
 
 
@@ -642,6 +643,9 @@ const Header = ({ }) => {
 
 
             </header>
+
+            {/* Announcement */}
+            <AnnouncementBanner show={show}/>
         </>
     )
 }
