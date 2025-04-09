@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function AnnouncementBanner({ show }: { show: boolean }) {
     const calculateTimeLeft = () => {
-        const difference = +new Date("2025-04-09T23:59:59") - +new Date();
+        const difference = +new Date("2025-04-11T23:59:59") - +new Date();
         let timeLeft = {
             difference,
             days: 0,
@@ -70,7 +70,7 @@ export default function AnnouncementBanner({ show }: { show: boolean }) {
                             >
                                 Submit your prototype
                             </a>{" "}
-                            before April 9th.
+                            before April 11th.
                         </>
                     )}
                 </p>
