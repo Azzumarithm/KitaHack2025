@@ -560,8 +560,8 @@ const Header = ({ }) => {
                         </div>
 
 
-                        <Link className={"hidden xl:block"} href="https://www.tinyurl.com/submit-kitahack25">
-                            <button className="bg-white/30 text-white font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/50 shadow-lg hover:bg-white/40 transition-all duration-300 w-fit">
+                        <Link className={"hidden xl:block"} href="">
+                            <button className="bg-white/20 text-gray-400 font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border border-white/30 shadow-lg transition-all duration-300 w-fit">
                                 Submit Prototype
                             </button>
                         </Link>

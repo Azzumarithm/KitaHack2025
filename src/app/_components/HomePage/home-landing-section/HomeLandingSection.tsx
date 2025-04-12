@@ -172,8 +172,8 @@ const HomeLandingSection = () => {
                                         <Icon icon="mdi:wand" className="inline-block h-6 w-6 ml-2" />
                                     </span>
                                 </a>
-                                <a id="registerButton" href="https://www.tinyurl.com/submit-kitahack25" target="_blank" rel="noopener noreferrer">
-                                    <span className="text-center inline-block px-7 py-3 bg-[#1D68E5] text-white rounded-full">
+                                <a id="registerButton" href="" target="_blank" rel="noopener noreferrer">
+                                    <span className="text-center inline-block px-7 py-3 bg-gray-100/5 text-gray-500 border-gray-100/10 rounded-full">
                                         Submit Prototype
                                     </span>
                                 </a>
