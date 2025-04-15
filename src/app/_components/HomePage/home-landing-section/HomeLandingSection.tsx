@@ -173,7 +173,7 @@ const HomeLandingSection = () => {
                                     </span>
                                 </a>
                                 <a id="registerButton" href="" target="_blank" rel="noopener noreferrer">
-                                    <span className="text-center inline-block px-7 py-3 bg-gray-100/5 text-gray-500 border-gray-100/10 rounded-full">
+                                    <span className="text-center inline-block px-7 py-3 bg-gray-200/80 text-gray-400 dark:bg-gray-100/5 dark:text-gray-500 border-gray-100/10 rounded-full">
                                         Submit Prototype
                                     </span>
                                 </a>
