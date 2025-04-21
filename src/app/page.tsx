@@ -19,6 +19,7 @@ import JudgingCriteriaNew from "./_components/HomePage/judging-criteria-new/judg
 import BannerHashtagSection from "./_components/HomePage/banner-hashtag-section/BannerHashtagSection";
 import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionNew";
 import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
+import DemoDayDescSection from "./_components/HomePage/demoDayDesc/demoDayDesc";
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
 
 
@@ -27,6 +28,8 @@ export default function Home() {
     <main className="py-20 space-y-32 z-0">
 
       <HomeLandingSection />
+
+      <DemoDayDescSection />
 
       <EventShowcaseSection/>
       
