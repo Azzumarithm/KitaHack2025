@@ -20,7 +20,7 @@ import BannerHashtagSection from "./_components/HomePage/banner-hashtag-section/
 import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionNew";
 
 
-import DemoDayDescSection from "./_components/HomePage/demoDayDesc/demoDayDesc";
+// import DemoDayDescSection from "./_components/HomePage/demoDayDesc/demoDayDesc";
 
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
 import DemoDaySection from "./_components/HomePage/demo-day-section/DemoDaySection";
@@ -35,7 +35,7 @@ export default function Home() {
       <HomeLandingSection />
 
 
-      <DemoDayDescSection />
+      {/* <DemoDayDescSection /> */}
 
 
 
