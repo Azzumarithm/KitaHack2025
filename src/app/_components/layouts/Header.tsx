@@ -560,9 +560,9 @@ const Header = ({ }) => {
                         </div>
 
 
-                        <Link className={"hidden xl:block"} href="">
-                            <button className="bg-white/15 text-gray-200 border-white/30 dark:bg-white/20 dark:text-gray-400 dark:border-white/30 font-black w-[10rem] px-7 py-3 rounded-full backdrop-blur-lg border transition-all duration-300 w-fit">
-                                Submit Prototype
+                        <Link className={"hidden xl:block"} href="/#demo-day">
+                            <button className="bg-white/30 text-gray-200 border-white font-black px-7 py-3 rounded-full backdrop-blur-lg border transition-all duration-300 w-fit hover:bg-white/40">
+                                Demo Day
                             </button>
                         </Link>
 
