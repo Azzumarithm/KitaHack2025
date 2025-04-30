@@ -31,7 +31,7 @@ const DemoDaySection = () => {
             {/* Foreground Content */}
             <div className="relative z-10">
                 {/* Part 1 */}
-                <div className="flex flex-col justify-center items-center text-center gap-4">
+                <div className="flex flex-col justify-center items-center text-center gap-4 mb-24">
                     <div className="space-y-6 p-6 md:px-12 xl:px-52">
                         {/* Badge */}
                         <span
@@ -86,12 +86,31 @@ const DemoDaySection = () => {
                     </div>
                 </div>
 
-                {/* Marquee & Phone */}
-                <div className="flex items-center justify-center h-[500px] lg:h-[650px] relative overflow-hidden">
+                {/* for md screen */}
+                <div className={"hidden md:block lg:hidden"}>
+
+                    <div className="flex relative items-center justify-center pt-25">
+                        {/* Glow effect behind the phone */}
+                        <div className="absolute lg:block w-[210px] h-[420px] bg-white blur-xl opacity-50 z-20" />
+
+                        {/* Phone image */}
+                        <Image
+                            src="/images/homepage/demoDay/phone-demo.png"
+                            width={200}
+                            height={300}
+                            alt="phone-demo"
+                            className="relative z-30"
+                        />
+                    </div>
+                </div>
+
+
+                {/* Marquee & Phone for web screen*/}
+                <div className="hidden md:flex items-center justify-center h-[500px] lg:h-[650px] relative overflow-hidden">
                     {/* Phone image */}
                     <div className="relative flex items-center justify-center min-h-screen">
                         {/* Glow effect behind the phone */}
-                        <div className="absolute w-[240px] h-[460px] bg-white blur-xl opacity-50 z-20" />
+                        <div className="absolute hidden lg:block w-[240px] h-[460px] bg-white blur-xl opacity-50 z-20" />
 
                         {/* Phone image */}
                         <Image
@@ -99,7 +118,7 @@ const DemoDaySection = () => {
                             width={250}
                             height={500}
                             alt="phone-demo"
-                            className="relative z-30"
+                            className="relative z-30 hidden lg:block"
                         />
                     </div>
 
@@ -155,6 +174,45 @@ const DemoDaySection = () => {
                     </div>
                 </div>
 
+
+                {/* Marquee & Phone for mobile screen*/}
+                <div className={"block md:hidden mb-10 "}>
+                    <div className="relative flex items-center justify-center min-h-screen">
+                        {/* Glow effect behind the phone */}
+                        <div className="absolute lg:block w-[210px] h-[420px] bg-white blur-xl opacity-50 z-20" />
+
+                        {/* Phone image */}
+                        <Image
+                            src="/images/homepage/demoDay/phone-demo.png"
+                            width={200}
+                            height={300}
+                            alt="phone-demo"
+                            className="relative z-30"
+                        />
+                    </div>
+
+                    <div className={"flex flex-wrap justify-center gap-3 px-4"}>
+                        <Image
+                            src="/images/homepage/demoDay/demo-3.png"
+                            width={170}
+                            height={300}
+                            alt="phone-demo"
+                            className="relative z-30"
+                        />
+                        <Image
+                            src="/images/homepage/demoDay/demo-5.png"
+                            width={170}
+                            height={300}
+                            alt="phone-demo"
+                            className="relative z-30"
+                        />
+                    </div>
+                </div>
+
+
+
+
+
                 {/* Part 3 - Venue, Agenda, Time */}
                 <div className="space-y-6 p-6 md:px-12 xl:px-52">
                     <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-8 md:gap-4 text-center">
@@ -169,8 +227,7 @@ const DemoDaySection = () => {
                             </div>
                             <p className="text-gray-600 text-sm md:text-base dark:text-gray-400">
                                 <i>
-                                    Jalan Lagoon Selatan, Bandar Sunway, 47500 Subang Jaya,
-                                    Selangor
+                                    Monash University Malaysia <br />Jalan Lagoon Selatan 47500, Bandar Sunway, <br /> Selangor, Malaysia
                                 </i>
                             </p>
                         </div>
@@ -199,7 +256,7 @@ const DemoDaySection = () => {
                                 />
                             </div>
                             <p className="text-gray-600 text-sm md:text-base dark:text-gray-400">
-                                <i>Sunday, May 4, 2025 10:00 AM – 3:00 PM (MYT)</i>
+                                <i>Sunday, May 4, 2025 <br />10:00 AM – 3:00 PM (MYT)</i>
                             </p>
                         </div>
                     </div>
