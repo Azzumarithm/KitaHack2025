@@ -23,7 +23,7 @@ import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionN
 // import DemoDayDescSection from "./_components/HomePage/demoDayDesc/demoDayDesc";
 
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
-import DemoDaySection from "./_components/HomePage/demo-day-section/DemoDaySection";
+// import DemoDaySection from "./_components/HomePage/demo-day-section/DemoDaySection";
 
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
 
@@ -39,7 +39,7 @@ export default function Home() {
 
 
 
-      <DemoDaySection/>
+      {/* <DemoDaySection/> */}
       {/* <EventShowcaseSection/> */}
 
       
