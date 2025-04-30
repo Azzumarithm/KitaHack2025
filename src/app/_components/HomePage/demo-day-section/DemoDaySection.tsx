@@ -19,7 +19,7 @@ const DemoDaySection = () => {
     return (
 
         <motion.div
-            id="hero"
+            id="demo-day"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -177,7 +177,7 @@ const DemoDaySection = () => {
 
                 {/* Marquee & Phone for mobile screen*/}
                 <div className={"block md:hidden mb-10 "}>
-                    <div className="relative flex items-center justify-center min-h-screen">
+                    <div className="relative flex items-center justify-center mb-20">
                         {/* Glow effect behind the phone */}
                         <div className="absolute lg:block w-[210px] h-[420px] bg-white blur-xl opacity-50 z-20" />
 
@@ -191,22 +191,19 @@ const DemoDaySection = () => {
                         />
                     </div>
 
-                    <div className={"flex flex-wrap justify-center gap-3 px-4"}>
-                        <Image
+                    <div className="flex flex-wrap justify-center gap-3 px-4">
+                        <img
                             src="/images/homepage/demoDay/demo-3.png"
-                            width={170}
-                            height={300}
                             alt="phone-demo"
-                            className="relative z-30"
+                            className="relative z-30 w-[160px] sm:w-[250px]"
                         />
-                        <Image
+                        <img
                             src="/images/homepage/demoDay/demo-5.png"
-                            width={170}
-                            height={300}
                             alt="phone-demo"
-                            className="relative z-30"
+                            className="relative z-30 w-[160px] sm:w-[250px]"
                         />
                     </div>
+
                 </div>
 
 
