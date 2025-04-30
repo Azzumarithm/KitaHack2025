@@ -31,7 +31,7 @@ const DemoDaySection = () => {
             {/* Foreground Content */}
             <div className="relative z-10">
                 {/* Part 1 */}
-                <div className="flex flex-col justify-center items-center text-center gap-4 mb-24">
+                <div className="flex flex-col justify-center items-center text-center gap-4 mb-24 lg:mb-0">
                     <div className="space-y-6 p-6 md:px-12 xl:px-52">
                         {/* Badge */}
                         <span
