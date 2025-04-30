@@ -39,7 +39,7 @@ export default function Home() {
 
 
 
-      <DemoDaySection/>
+      {/* <DemoDaySection/> */}
       {/* <EventShowcaseSection/> */}
 
       
