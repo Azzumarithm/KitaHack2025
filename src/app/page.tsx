@@ -18,7 +18,13 @@ import SdgAISection from "./_components/HomePage/sdg-ai-section/SdgAISection";
 import JudgingCriteriaNew from "./_components/HomePage/judging-criteria-new/judging-criteria";
 import BannerHashtagSection from "./_components/HomePage/banner-hashtag-section/BannerHashtagSection";
 import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionNew";
-import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
+
+
+// import DemoDayDescSection from "./_components/HomePage/demoDayDesc/demoDayDesc";
+
+// import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
+import DemoDaySection from "./_components/HomePage/demo-day-section/DemoDaySection";
+
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
 
 
@@ -28,7 +34,14 @@ export default function Home() {
 
       <HomeLandingSection />
 
-      <EventShowcaseSection/>
+
+      {/* <DemoDayDescSection /> */}
+
+
+
+      <DemoDaySection/>
+      {/* <EventShowcaseSection/> */}
+
       
       <InnovateWithAISection />
 
