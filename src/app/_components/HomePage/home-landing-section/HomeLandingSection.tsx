@@ -112,6 +112,58 @@ const HomeLandingSection = () => {
         }
     ];
 
+    const sponsorsLogo = [
+        {
+            name: "CIMB",
+            logos: {
+                light: "/images/sponsors/CIMB-red.png",
+                dark: "/images/sponsors/CIMB-white.png"
+            }
+        },
+        {
+            name: "SEEK",
+            logos: {
+                light: "/images/sponsors/SEEK-light.png",
+                dark: "/images/sponsors/SEEK-dark.png"
+            }
+        },
+        {
+            name: "Cradle",
+            logos: {
+                light: "/images/sponsors/Cradle.jpg",
+                dark: "/images/sponsors/Cradle.jpg"
+            }
+        },
+        {
+            name: "GDG Cloud",
+            logos: {
+                light: "/images/sponsors/gdg-cloud.png",
+                dark: "/images/sponsors/gdg-cloud.png"
+            }
+        },
+        {
+            name: "GDG KL",
+            logos: {
+                light: "/images/sponsors/gdgkl-light.png",
+                dark: "/images/sponsors/gdgkl-dark.png"
+            }
+        },
+        {
+            name: "ZUS Coffee",
+            logos: {
+                light: "/images/sponsors/ZUS.png",
+                dark: "/images/sponsors/ZUS.png"
+            }
+        },
+        {
+            name: "Malaysiakini",
+            logos: {
+                light: "/images/sponsors/malaysiakini.png",
+                dark: "/images/sponsors/malaysiakini.png"
+            }
+        }
+    ];
+
     const imageSlideShow = [
         "/images/slideshow/Copy_of_IMG_1773.JPG",
         "/images/slideshow/Copy_of_IMG_1786.JPG",
@@ -206,6 +258,34 @@ const HomeLandingSection = () => {
                                         </>
                                     ))
                                 ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Sponsor Logos */}
+                    <div className="relative bg-[#FCFBFD] mt-8 p-8 rounded-2xl dark:bg-[#1A1A1A]" id={"sponsor"}>
+                        <div className="w-full space-x-10 overflow-x-auto no-scrollbar scroll-smooth snap-x">
+                            <div className="flex space-x-1 min-w-max w-full animate-scroll-reverse">
+                            {[...Array(2)].map((_, i) =>
+                                sponsorsLogo.map((sps) => {
+                                const isSpecial = sps.name === "GDG Cloud"; // <- change name accordingly
+
+                                return (
+                                    <a key={`${sps.name}-${i}`} className="snap-center flex items-center">
+                                        <Image src={(theme || resolvedTheme) === "dark" ? sps.logos.dark : sps.logos.light}
+                                            alt={sps.name}
+                                            width={300}
+                                            height={100}
+                                            className={
+                                            isSpecial
+                                                ? "h-20 w-auto object-contain opacity-100"
+                                                : "max-h-20 max-w-[230px] object-contain opacity-100"
+                                            }
+                                        />
+                                    </a>
+                                );
+                                })
+                            )}
                             </div>
                         </div>
                     </div>

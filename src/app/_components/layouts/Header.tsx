@@ -527,7 +527,11 @@ const Header = ({ }) => {
                             <Menubar className={"bg-transparent border-none shadow-none data-[state=open]:bg-transparent  text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
 
                                 <MenubarMenu>
-                                    <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>Sponsors</MenubarTrigger>
+                                    <MenubarTrigger className={"bg-transparent border-none active:bg-white/10 focus:bg-white/10 focus-visible:bg-white/10 data-[state=open]:bg-white/10 aria-selected:bg-white/10 group-active:bg-white/10 text-white active:text-white focus:text-white focus-visible:text-white data-[state=open]:text-white aria-selected:text-white group-active:text-white"}>
+                                        <Link href={"/#sponsor"}>
+                                            Sponsor
+                                        </Link>
+                                    </MenubarTrigger>
                                 </MenubarMenu>
                                 <MenubarMenu>
                                     <MenubarTrigger className={`bg-transparent border-none data-[state=open]:bg-white/10  text-white data-[state=open]:text-white `}>Events</MenubarTrigger>
@@ -645,7 +649,7 @@ const Header = ({ }) => {
             </header>
 
             {/* Announcement */}
-            <AnnouncementBanner show={show}/>
+            <AnnouncementBanner show={show} />
         </>
     )
 }
