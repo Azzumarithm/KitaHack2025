@@ -263,7 +263,7 @@ const HomeLandingSection = () => {
                     </div>
 
                     {/* Sponsor Logos */}
-                    <div className="relative bg-[#FCFBFD] mt-8 p-8 rounded-2xl dark:bg-[#1A1A1A]">
+                    <div className="relative bg-[#FCFBFD] mt-8 p-8 rounded-2xl dark:bg-[#1A1A1A]" id={"sponsor"}>
                         <div className="w-full space-x-10 overflow-x-auto no-scrollbar scroll-smooth snap-x">
                             <div className="flex space-x-1 min-w-max w-full animate-scroll-reverse">
                             {[...Array(2)].map((_, i) =>
