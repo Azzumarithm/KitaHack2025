@@ -253,7 +253,7 @@ const DemoDaySection = () => {
                                 />
                             </div>
                             <p className="text-gray-600 text-sm md:text-base dark:text-gray-400">
-                                <i>Sunday, May 4, 2025 <br />10:00 AM – 3:00 PM (MYT)</i>
+                                <i>Sunday, May 4, 2025 <br />10:00 AM – 4:30 PM (MYT)</i>
                             </p>
                         </div>
                     </div>
