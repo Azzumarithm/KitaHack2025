@@ -75,7 +75,7 @@ const DemoDaySection = () => {
                         </a>
                         <a
                             id="registerButton"
-                            href="/images/demo-day/demoDay.ics"
+                            href="https://www.youtube.com/live/1YzRfNJ4laE?feature=shared"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
