@@ -62,7 +62,7 @@ const KitahackWinnerSection = () => {
                                     className="w-full border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl block md:hidden"
                                 />
 
-                                <div className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 text-sm sm:text-md md:text-lg lg:text-2xl xl:text-2xl font-bold text-blue-500 text-center shadow-lg rounded-3xl border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                                <div className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-1/2 bg-white w-3/4 md:w-1/2 py-4 px-2 md:py-8 md:px-2 text-sm sm:text-md md:text-lg lg:text-2xl xl:text-2xl font-bold text-blue-500 text-center shadow-lg rounded-3xl border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                     KITAHACK 2025 CHAMPION
                                 </div>
                             </div>
@@ -78,9 +78,9 @@ const KitahackWinnerSection = () => {
                                             className="w-[570px] border-2 border-gray-300  group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                             alt=""
                                         />
-                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 font-bold text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                             <p className={"text-xs"}>1ST RUNNER UP</p>
-                                            <h1 className={"text-md sm:text-md md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent"}>CTRL + A</h1>
+                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Ctrl + A</h1>
 
                                         </div>
                                     </div>
@@ -92,9 +92,9 @@ const KitahackWinnerSection = () => {
                                             className="w-[570px] border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                             alt=""
                                         />
-                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto  md:top-0 left-1/2  md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 font-bold text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto  md:top-0 left-1/2  md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                             <p className={"text-xs"}>2ND RUNNER UP</p>
-                                            <h1 className={"text-md sm:text-md md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent"}>Pixel Pulse</h1>
+                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Pixel Pulse</h1>
 
                                         </div>
                                     </div>
@@ -109,9 +109,9 @@ const KitahackWinnerSection = () => {
                                 className="w-[570px] border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                 alt=""
                             />
-                            <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 md:w-1/3 py-4 md:py-8 font-bold text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                            <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 md:w-1/3 py-4 md:py-8 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                 <p className={"text-xs"}>SPECIAL AWARD</p>
-                                <h1 className={"text-md sm:text-md md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent"}>Bugs Slayer</h1>
+                                <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Bugs Slayer</h1>
                             </div>
                         </div>
                     </div>
