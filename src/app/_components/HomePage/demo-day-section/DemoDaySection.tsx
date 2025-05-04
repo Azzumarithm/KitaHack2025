@@ -75,12 +75,12 @@ const DemoDaySection = () => {
                         </a>
                         <a
                             id="registerButton"
-                            href="/images/demo-day/demoDay.ics"
+                            href="https://www.youtube.com/live/1YzRfNJ4laE?feature=shared"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <span className="text-center inline-block px-7 py-3 bg-gradient-to-r from-[#FF3998] to-[#116BFF] text-white border-gray-100/10 rounded-full">
-                                Save The Date
+                                Watch Live
                             </span>
                         </a>
                     </div>
