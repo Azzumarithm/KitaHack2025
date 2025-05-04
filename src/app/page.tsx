@@ -24,6 +24,7 @@ import FAQsSectionNew from "./_components/HomePage/faqs-section-new/FaqsSectionN
 
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/EventShowcaseSection";
 import DemoDaySection from "./_components/HomePage/demo-day-section/DemoDaySection";
+import KitahackWinnerSection from "./_components/HomePage/kitahack-winner/KitahackWinnerSection";
 
 // import EventShowcaseSection from "./_components/HomePage/event-showcase-section/GoogleWorkspace";
 
@@ -41,6 +42,8 @@ export default function Home() {
 
       <DemoDaySection/>
       {/* <EventShowcaseSection/> */}
+
+      <KitahackWinnerSection/>
 
       
       <InnovateWithAISection />
