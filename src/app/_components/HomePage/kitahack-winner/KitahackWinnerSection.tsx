@@ -53,7 +53,7 @@ const KitahackWinnerSection = () => {
                             {/* Top full-width image with bottom caption */}
                             <div className="relative col-span-2 group">
                                 <img
-                                    src="images/homepage/winnners/champion-desktop.jpg"
+                                    src="images/homepage/winnners/champion-desktop.JPG"
                                     alt=""
                                     className="w-full border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl hidden md:block"
                                 />
