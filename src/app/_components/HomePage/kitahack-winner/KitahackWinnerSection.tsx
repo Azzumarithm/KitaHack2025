@@ -14,8 +14,8 @@ const KitahackWinnerSection = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false }}
                 className="container mx-auto z-10">
-                <div className="px-6 md:px-12 xl:px-40 space-y-16">
-                    <div className="space-y-6 p-6 md:px-12 xl:px-52 text-center">
+                <div className="px-6 md:px-12 xl:px-40 space-y-12">
+                    <div className="space-y-4 text-center">
                         {/* Badge */}
                         <span
                             id="demo-day-section"
@@ -27,21 +27,23 @@ const KitahackWinnerSection = () => {
 
                         {/* Title */}
                         <h1
-                            id="demo-day_title"
-                            className="font-semibold text-3xl text-black md:text-5xl xl:text-6xl dark:text-white"
+                            id="kitahack-winner"
+                            className="font-semibold text-4xl text-black md:text-5xl xl:text-6xl dark:text-white"
                         >
                             <span className="bg-gradient-to-r from-[#FF3998] to-[#116BFF] bg-clip-text text-transparent">
-                                Congratulations! <br />
-                                <p className={"bg-gradient-to-r from-[#FF3998] to-[#116BFF] bg-clip-text text-transparent"}>Nexus Team!</p>
+                                <span className="font-light">Congratulations!</span> <br />
+                                <p className="bg-gradient-to-r from-[#FF3998] to-[#116BFF] bg-clip-text text-transparent font-black">
+                                    Ctrl + C Ctrl + V!
+                                </p>
                             </span>
+
                         </h1>
 
                         {/* Subtext */}
-                        <div className="max-w-full lg:mb-8 text-center">
-                            <p className="text-[#5A5A5A] dark:text-gray-400 text-center italic">
-                                A cutting-edge integration of neurotech and AI to create a hands-free digital assistant. Judges were wowed by the ambition, flawless demo, and real-world potential.
-                            </p>
-                        </div>
+                        <p className="text-[#5A5A5A] dark:text-gray-400 text-center italic">
+                            EqualLens – An AI-powered recruitment platform tackling bias and inefficiency in hiring. Judges were impressed by the real-world relevance, seamless automation, and commitment to fairness and equal opportunity.
+                        </p>
+                        
                     </div>
 
                     <div className={"space-y-16 md:space-y-36"}>
@@ -51,13 +53,13 @@ const KitahackWinnerSection = () => {
                             {/* Top full-width image with bottom caption */}
                             <div className="relative col-span-2 group">
                                 <img
-                                    src="images/homepage/winnners/winner-crop.jpeg"
+                                    src="images/homepage/winnners/champion-desktop.jpg"
                                     alt=""
                                     className="w-full border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl hidden md:block"
                                 />
 
                                 <img
-                                    src="images/homepage/winnners/winner.jpeg"
+                                    src="images/homepage/winnners/champion.jpg"
                                     alt=""
                                     className="w-full border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl block md:hidden"
                                 />
@@ -74,13 +76,13 @@ const KitahackWinnerSection = () => {
                                     {/* First image group */}
                                     <div className="relative flex justify-center group">
                                         <img
-                                            src="images/homepage/winnners/winner.jpeg"
+                                            src="images/homepage/winnners/first-runnerup.JPG"
                                             className="w-[570px] border-2 border-gray-300  group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                             alt=""
                                         />
-                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-4/6 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                             <p className={"text-xs"}>1ST RUNNER UP</p>
-                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Ctrl + A</h1>
+                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Hokkien Mee is Red</h1>
 
                                         </div>
                                     </div>
@@ -88,13 +90,13 @@ const KitahackWinnerSection = () => {
                                     {/* Second image group */}
                                     <div className="relative flex justify-center group">
                                         <img
-                                            src="images/homepage/winnners/winner.jpeg"
+                                            src="images/homepage/winnners/second-runnerup.JPG"
                                             className="w-[570px] border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                             alt=""
                                         />
-                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto  md:top-0 left-1/2  md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                                        <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto  md:top-0 left-1/2  md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-4/6 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                             <p className={"text-xs"}>2ND RUNNER UP</p>
-                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Pixel Pulse</h1>
+                                            <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>The Green Reapers</h1>
 
                                         </div>
                                     </div>
@@ -105,13 +107,13 @@ const KitahackWinnerSection = () => {
                         {/* Bottom single image */}
                         <div className="flex justify-center relative group">
                             <img
-                                src="images/homepage/winnners/winner.jpeg"
+                                src="images/homepage/winnners/speacial-award.JPG"
                                 className="w-[570px] border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300 rounded-3xl"
                                 alt=""
                             />
-                            <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-1/2 md:w-1/3 py-4 md:py-8 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
+                            <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-1/3 py-4 md:py-8 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
                                 <p className={"text-xs"}>SPECIAL AWARD</p>
-                                <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Bugs Slayer</h1>
+                                <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>KatakHack</h1>
                             </div>
                         </div>
                     </div>

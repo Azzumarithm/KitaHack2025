@@ -39,11 +39,11 @@ export default function Home() {
       {/* <DemoDayDescSection /> */}
 
 
+      <KitahackWinnerSection/>
 
       <DemoDaySection/>
       {/* <EventShowcaseSection/> */}
 
-      <KitahackWinnerSection/>
 
       
       <InnovateWithAISection />
