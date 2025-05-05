@@ -81,7 +81,7 @@ const KitahackWinnerSection = () => {
                                             alt=""
                                         />
                                         <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-4/6 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
-                                            <p className={"text-xs"}>1ST RUNNER UP</p>
+                                            <p className={"text-xs md:text-sm"}>1ST RUNNER UP</p>
                                             <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>Hokkien Mee is Red</h1>
 
                                         </div>
@@ -95,7 +95,7 @@ const KitahackWinnerSection = () => {
                                             alt=""
                                         />
                                         <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto  md:top-0 left-1/2  md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-4/6 py-4 px-2 md:py-8 md:px-2 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
-                                            <p className={"text-xs"}>2ND RUNNER UP</p>
+                                            <p className={"text-xs md:text-sm"}>2ND RUNNER UP</p>
                                             <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>The Green Reapers</h1>
 
                                         </div>
@@ -112,7 +112,7 @@ const KitahackWinnerSection = () => {
                                 alt=""
                             />
                             <div className="absolute bottom-0 translate-x-[-50%] translate-y-1/2 md:bottom-auto md:top-0 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-white w-3/4 md:w-1/3 py-4 md:py-8 text-blue-500 shadow-md rounded-3xl text-center border-2 border-gray-300 group-hover:border-blue-500 transition-all duration-300">
-                                <p className={"text-xs"}>SPECIAL AWARD</p>
+                                <p className={"text-xs md:text-sm"}>SPECIAL AWARD</p>
                                 <h1 className={"text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-bold"}>KatakHack</h1>
                             </div>
                         </div>
